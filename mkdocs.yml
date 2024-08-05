@@ -1,0 +1,62 @@
+# Project information
+site_name: Xytech API Documentation
+site_url: https://peterhissey.github.io/documentation
+
+# Repository
+#repo_url: https://github.com/PeterHissey/documentation
+#edit_uri: /tree/main/docs
+
+# Copyright
+copyright: Copyright &copy; 2024 Xytech Systems Inc.
+
+# Configuration
+theme:
+  name: material
+  features:
+    #- navigation.path
+    - navigation.instant
+    - navigation.footer
+   # - navigation.sections
+    - navigation.tracking #the URL in the address bar is automatically updated with the active anchor as highlighted in the table of contents
+   # - navigation.tabs   #When tabs are enabled, top-level sections are rendered in a menu layer below the header
+
+  logo: logo.png
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
+# Hide Made with MKDocs
+extra:
+  generator: false  
+
+   
+plugins:
+    - search
+    - glightbox
+    - callouts
+
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - nl2br # newlines to be treated as hard breaks
+  - pymdownx.highlight: #code syntax highlighting
+  #    linenums: true    #add line numbers to code blocks
+  - pymdownx.superfences 
+  - admonition          #Add call-outs formatting
+  - pymdownx.details    # call outs 
+  - def_list            #add bullet lists  
+  - pymdownx.tasklist:  #add check box lists
+      custom_checkbox: true
+      

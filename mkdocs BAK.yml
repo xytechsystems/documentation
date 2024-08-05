@@ -1,0 +1,48 @@
+# Project information
+site_name: Xytech API Documentation
+site_url: https://peterhissey.github.io/documentation
+
+# Repository
+repo_url: https://github.com/PeterHissey/documentation
+edit_uri: /tree/main/docs
+
+# Copyright
+copyright: Copyright &copy; 2024 Xytech Systems Inc.
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.footer
+    - navigation.sections
+    - navigation.tabs   #When tabs are enabled, top-level sections are rendered in a menu layer below the header
+    #- navigation.path
+    - toc.integrate
+
+# Hide Made with MKDocs
+extra:
+    generator: false  
+
+
+#Hide homepage
+not_in_nav: |
+  /index.md 
+   
+# Page tree    
+# nav:
+#  - Home: index.md
+#  - REST API Guide: REST-API/
+#  - Webhooks Guide: Webhooks/
+#  - About:
+#    - Release Notes: about/release-notes.md
+#    - Contributing: about/contributing.md
+#    - License: about/license.md  
+  
+  
+plugins:
+    - search
+    - glightbox
+
+
+
