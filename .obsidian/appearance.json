@@ -1,7 +1,9 @@
 {
   "theme": "system",
-  "cssTheme": "",
-  "accentColor": "#6471d3",
+  "cssTheme": "Minimal",
+  "accentColor": "#f39e4f",
   "showViewHeader": true,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "baseFontSizeAction": false,
+  "baseFontSize": 17
 }
