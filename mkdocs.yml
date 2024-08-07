@@ -59,4 +59,14 @@ markdown_extensions:
   - def_list            #add bullet lists  
   - pymdownx.tasklist:  #add check box lists
       custom_checkbox: true
-      
+
+#nav:
+#  - Section:
+#   - section/REST-API Guide/'
+#  - 'User Guide': 'user-guide.md'
+#  - 'Bug Tracker': 'REST-API Guide/'
+
+
+
+draft_docs:
+  drafts/  # A "drafts" directory anywhere.
