@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "23cff3979fea3166",
+        "id": "be6d57eb83a871be",
         "type": "tabs",
         "children": [
           {
-            "id": "55ef061a0f8e84b2",
+            "id": "f538370b1cb94d61",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/index.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/index.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -146,8 +138,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c779001196d24dda",
+  "active": "f538370b1cb94d61",
   "lastOpenFiles": [
+    "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md",
+    "docs/Webhooks Guide/3. Outbound Connection.md",
+    "docs/Webhooks Guide/4. Export Adaptor.md",
+    "docs/Webhooks Guide/2. Webhooks What's New.md",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/21965149700251.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/21965149659035.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/21965135300635.png",
@@ -158,7 +154,6 @@
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/20338643730331.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/20338627703195.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/20338473750299.png",
-    "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/20338456525595.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems",
     "docs/x Zendesk Articles/Media Operations Platform REST API Reference - 10.6 – Xytech Systems",
     "docs/x Zendesk Articles",
@@ -166,9 +161,6 @@
     "docs/Webhooks Guide/7. Tips and Troubleshooting.md",
     "docs/Webhooks Guide/6. Export Adaptor Logs.md",
     "docs/Webhooks Guide/5. Event Trigger.md",
-    "docs/Webhooks Guide/4. Export Adaptor.md",
-    "docs/Webhooks Guide/3. Outbound Connection.md",
-    "docs/Webhooks Guide/2. Webhooks What's New.md",
     "docs/Webhooks Guide/1. Introduction.md",
     "docs/Webhooks Guide",
     "docs/REST-API Guide/03. Deprecation of REST API v1.md",
