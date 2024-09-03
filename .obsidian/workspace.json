@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "be6d57eb83a871be",
+        "id": "c48783b3de77b47d",
         "type": "tabs",
         "children": [
           {
-            "id": "f538370b1cb94d61",
+            "id": "281b806f774efe98",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -146,8 +138,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f538370b1cb94d61",
+  "active": "281b806f774efe98",
   "lastOpenFiles": [
+    "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
+    "docs/drafts v11.1/xNewforV11-1/REST API New in V11.1.md",
+    "docs/REST-API Guide/1. Getting Started/06. Examples.md",
+    "docs/drafts v11.1/xNewforV11-1/Webhooks New for v11.1.md",
+    "docs/drafts v11.1/xNewforV11-1/assets/Pasted image 20240626105827.png",
     "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md",
     "docs/Webhooks Guide/3. Outbound Connection.md",
     "docs/Webhooks Guide/4. Export Adaptor.md",
@@ -161,7 +158,6 @@
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/21958126786331.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/20338643730331.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/20338627703195.png",
-    "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/20338473750299.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems",
     "docs/x Zendesk Articles/Media Operations Platform REST API Reference - 10.6 – Xytech Systems",
     "docs/x Zendesk Articles",
@@ -190,10 +186,6 @@
     "README.md",
     "REST-API Guide/24. index.md",
     "REST-API Guide",
-    "docs/REST-API Guide/02. What's New.md",
-    "docs/REST-API Guide/1. Getting Started/07. Using Postman and cURL.md",
-    "docs/REST-API Guide/1. Getting Started/04. Connecting and Authenticating.md",
-    "docs/REST-API Guide/2. Document and API Structure/08. Fundamentals and data model.md",
-    "docs/REST-API Guide/1. Getting Started/05. Methods and response codes.md"
+    "docs/REST-API Guide/02. What's New.md"
   ]
 }

@@ -58,7 +58,7 @@ Include token as a header in the format:
 
 Note: Tokens will expire, so will need periodic refreshing.
 
-## SysContact ability to create User and Vendor profiles
+## SysContactFacade ability to create User and Vendor profiles
 [16585](https://dev.azure.com/xytsystems/Xytech%20Platform/_workitems/edit/16585)
 The existing SysContactFacade endpoint now supports the creation and updating of User and Vendor contact types (profiles).
 
@@ -76,6 +76,11 @@ GET query with AND condition, matching on all search keywords where the order of
 As an API integration developer, I need my integration tools to be able to import Swagger docs as a JSON file. Either downloaded or via a direct URL link. (tools such as Zapier, Node Red OpenAPI node etc...)
 
 This story is to provide users with a JSON file definition to download.
+
+## Link child titles to parent in single API call
+REST API now provides a new endpoint that gives the ability to create new or existing Titles and assign to a parent Title in a single API call. New endpoint: /LibTitleHierarchyFacade.
+
+
 
 
 ## Known issues
