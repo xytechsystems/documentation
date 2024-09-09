@@ -138,13 +138,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "281b806f774efe98",
+  "active": "c779001196d24dda",
   "lastOpenFiles": [
     "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
-    "docs/drafts v11.1/xNewforV11-1/REST API New in V11.1.md",
+    "docs/drafts/xNewforV11-1/REST API New in V11.1.md",
     "docs/REST-API Guide/1. Getting Started/06. Examples.md",
-    "docs/drafts v11.1/xNewforV11-1/Webhooks New for v11.1.md",
-    "docs/drafts v11.1/xNewforV11-1/assets/Pasted image 20240626105827.png",
+    "docs/drafts/xNewforV11-1/Webhooks New for v11.1.md",
+    "docs/drafts/xNewforV11-1/assets/Pasted image 20240626105827.png",
     "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md",
     "docs/Webhooks Guide/3. Outbound Connection.md",
     "docs/Webhooks Guide/4. Export Adaptor.md",
