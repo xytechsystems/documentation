@@ -110,6 +110,7 @@ Functionality that obtains the Entra claim values and maps to Xytech database fi
 | Document      | Contact Info  | family_name   |             | Contact | Last Name    |                          |
 | Document      | Long User ID  | prefered_name |             | User    | Long User ID |                          |
 | Template User | Template User | value         | *see below* |         |              | External Key             |
+
 Template user Path: `{"url":"https://graph.microsoft.com/v1.0/users/{user}/memberOf?$select=id","jpath":"$..id"}`
 
 ![](assets/Pasted%20image%2020241018165543.png)
