@@ -1,18 +1,20 @@
 ## Introduction
 This document explains the steps for setting up and configuring Xytech with an OpenID provider, specifically Microsoft Entra.
-The steps detailed in this document relating to Microsoft do not take into consideration you site's own IT policies and standards, but demonstrates the basic requirements needed by Xytech.
-This guide includes details for on-prem hosted instances.
+The steps detailed in this document relating to Microsoft do not take into consideration your site's own IT policies and standards, but demonstrates the basic requirements needed by Xytech.
+This guide includes the server-side settings for on-prem hosted instances.
 
 ## Microsoft Entra Admin setup
 https://entra.microsoft.com/
 ### Pre-requisite
 - OP User Groups exist that represent the different Xytech user roles. e.g. Scheduler, Operator, Media Manager etc...
 - OP Users are defined and assigned to their respective Xytech Group.
+
 OP = OpenID provider
 ### App Registration
-Information you need to know before creating an App Registration:
-Whatever the URL you use for logging into Xytech with the endpoint of /openidlogin
-For example your Xytech login URL might look like: https://example.com/site/login
+##### Redirect URI
+For the App Registration, you will need to know your sites redirect URI.
+The redirect URI is the URL you use for logging into Xytech with the endpoint of /openidlogin
+For example your Xytech login URL looks like: https://example.com/site/login
 The Xytech site redirect URI will be in the form: https://example.com/site/openidlogin
 
 By the end of the App Registration, you will have the following values needed for Xytech configuration:
@@ -31,7 +33,7 @@ Navigate to *App Registrations* using the Entra UI
 This now gives you the Application ID & Directory ID: 
 ![](assets/Pasted%20image%2020241018165325.png)
 
-###  Secrets
+### Secrets
 Create a new secret with a description and expiry timeframe.
 Make a note of the value of the Secret.
 
@@ -53,7 +55,7 @@ Make a note of the Group Object IDs that are to be mapped as Xytech permitted Gr
 ### Create Template Users
 For each of the user groups defined by the OP, a template user needs to be created or identified.
 
-The group id (Microsoft Group Object ID) from the auth provider should be added to the Xytech template User *external_key* field.
+The group id (Microsoft Group Object ID) from the OP should be added to the Xytech template User's *external_key* field.
 
 Changes made to the template user can be configured to auto sync to the linked OpenID Users, such as changes to Preferences, Divisions, Security, Dashboards and Additional Contacts. This means any changes to template user security roles will automatically be applied to existing OpenID users.
 
@@ -62,10 +64,10 @@ Indicate that the user is a Template user and choose options.
 User settings:
 ![](assets/Pasted%20image%2020241018165459.png)
 
-### Appserver.config settings
+### Appserver.config settings (on prem instances)
 
-Add the following settings to the appserver config file:
-Replacing {...} with your values obtained earlier:
+Add the following settings to the Xytech appserver config file:
+Replacing {...} with your values obtained earlier for:
 
 - Directory (Tennent) ID
 - Application (Client) ID
