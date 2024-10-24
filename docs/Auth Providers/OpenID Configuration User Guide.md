@@ -11,7 +11,6 @@ https://entra.microsoft.com/
 
 OP = OpenID provider
 ### App Registration
-##### Redirect URI
 For the App Registration, you will need to know your sites redirect URI.
 The redirect URI is the URL you use for logging into Xytech with the endpoint of /openidlogin
 For example your Xytech login URL looks like: https://example.com/site/login

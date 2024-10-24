@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a5c80defb5c9e958",
+        "id": "2d4febbb33c54470",
         "type": "tabs",
         "children": [
           {
-            "id": "fc017d8bc1f06134",
+            "id": "07b265ed3b0c4cf7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Auth Providers/OpenID Configuration User Guide.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "OpenID Configuration User Guide"
+              "title": "New tab"
             }
           }
         ]
@@ -136,11 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/Auth Providers/OpenID Configuration User Guide.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of OpenID Configuration User Guide"
+              "title": "Outline"
             }
           }
         ],
@@ -160,8 +154,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fc017d8bc1f06134",
+  "active": "07b265ed3b0c4cf7",
   "lastOpenFiles": [
+    "docs/Webhooks Guide/7. Tips and Troubleshooting.md",
+    "docs/Webhooks Guide/assets/Pasted image 20241024105233.png",
+    "docs/Webhooks Guide/6. Export Adaptor Logs.md",
+    "docs/Webhooks Guide/3. Outbound Connection.md",
+    "docs/Webhooks Guide/1. Introduction.md",
+    "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
     "docs/Auth Providers/OpenID Configuration User Guide.md",
     "docs/Auth Providers/assets/Pasted image 20241018165543.png",
     "docs/Auth Providers/assets/Pasted image 20241018165459.png",
@@ -177,25 +177,19 @@
     "docs/drafts/xNewforV11-1/validateQueryParameters.md",
     "docs/REST-API Guide/1. Getting Started/04. Connecting and Authenticating.md",
     "docs/REST-API Guide/3. Using the API/14. Save Arguments.md",
-    "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
     "docs/REST-API Guide/1. Getting Started/06. Examples.md",
     "docs/drafts/xNewforV11-1/Webhooks New for v11.1.md",
     "docs/drafts/xNewforV11-1/assets/Pasted image 20240626105827.png",
     "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md",
-    "docs/Webhooks Guide/3. Outbound Connection.md",
     "docs/Webhooks Guide/4. Export Adaptor.md",
     "docs/Webhooks Guide/2. Webhooks What's New.md",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/21965149700251.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/21965149659035.png",
-    "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems/21965135300635.png",
     "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems",
     "docs/x Zendesk Articles/Media Operations Platform REST API Reference - 10.6 – Xytech Systems",
     "docs/x Zendesk Articles",
     "docs/Webhooks Guide/assets",
-    "docs/Webhooks Guide/7. Tips and Troubleshooting.md",
-    "docs/Webhooks Guide/6. Export Adaptor Logs.md",
     "docs/Webhooks Guide/5. Event Trigger.md",
-    "docs/Webhooks Guide/1. Introduction.md",
     "docs/Webhooks Guide",
     "docs/REST-API Guide/03. Deprecation of REST API v1.md",
     "docs/index.md",
