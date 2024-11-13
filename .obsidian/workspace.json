@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d8df30c7ced391e9",
+        "id": "ccaca61278d9a157",
         "type": "tabs",
         "children": [
           {
-            "id": "9a85d5f965fc0e1f",
+            "id": "98deb7406b94fcd0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -154,15 +154,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9a85d5f965fc0e1f",
+  "active": "98deb7406b94fcd0",
   "lastOpenFiles": [
+    "docs/REST-API Guide/1. Getting Started/05. Methods and response codes.md",
+    "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
+    "docs/REST-API Guide/02. What's New.md",
     "docs/REST-API Guide/3. Using the API/14. Save Arguments.md",
     "docs/Webhooks Guide/7. Tips and Troubleshooting.md",
     "docs/Webhooks Guide/assets/Pasted image 20241024105233.png",
     "docs/Webhooks Guide/6. Export Adaptor Logs.md",
     "docs/Webhooks Guide/3. Outbound Connection.md",
     "docs/Webhooks Guide/1. Introduction.md",
-    "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
     "docs/Auth Providers/OpenID Configuration User Guide.md",
     "docs/Auth Providers/assets/Pasted image 20241018165543.png",
     "docs/Auth Providers/assets/Pasted image 20241018165459.png",
@@ -197,7 +199,6 @@
     "docs/REST-API Guide/4. Tuning and Maintenance/16. Performance Recommendations.md",
     "docs/REST-API Guide/3. Using the API/13. Query Parameters and Filters.md",
     "docs/x New for v11.1/New in V11.1.md",
-    "docs/REST-API Guide/3. Using the API/15. Upsert.md",
     "docs/REST-API Guide/Test Canvas.canvas",
     "docs/REST-API Guide/4. Tuning and Maintenance",
     "docs/REST-API Guide/3. Using the API",
