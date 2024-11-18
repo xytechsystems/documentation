@@ -1,0 +1,1841 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://peterhissey.github.io/documentation/REST-API%20Guide/03.%20Deprecation%20of%20REST%20API%20v1/">
+      
+      
+        <link rel="prev" href="../02.%20What%27s%20New/">
+      
+      
+        <link rel="next" href="../1.%20Getting%20Started/04.%20Connecting%20and%20Authenticating/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Deprecation of REST API v1 - Xytech API Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changes-in-v2-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Xytech API Documentation" class="md-header__button md-logo" aria-label="Xytech API Documentation" data-md-component="logo">
+      
+  <img src="../../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xytech API Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deprecation of REST API v1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Xytech API Documentation" class="md-nav__button md-logo" aria-label="Xytech API Documentation" data-md-component="logo">
+      
+  <img src="../../logo.png" alt="logo">
+
+    </a>
+    Xytech API Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xytech REST API & Webhooks Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Auth Providers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Auth Providers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Auth%20Providers/OpenID%20Configuration%20User%20Guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenID Configuration User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    REST API Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            REST API Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01.%20index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    REST API Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02.%20What%27s%20New/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What's New
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Deprecation of REST API v1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Deprecation of REST API v1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#changes-in-v2-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes in v2 API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changes in v2 API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#payload-structure-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Payload structure changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrating-to-api-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrating to API v2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migrating to API v2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-change-your-url-to-the-v2-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Change your URL to the v2 path.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-update-to-handle-the-improved-payload-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Update to handle the improved payload structure.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Update to handle the improved payload structure.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-jm_job-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET Jm_Job v1:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-jm_job-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET Jm_Job v2:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-xmtransmissionorder-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST XmTransmissionOrder v1:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-xmtransmissionorder-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST XmTransmissionOrder v2:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-utilise-new-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Utilise new parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Utilise new parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nullvaluehandlingignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      NullValueHandling=ignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternatekeyhandlingignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      AlternateKeyHandling=ignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultcolumns" class="md-nav__link">
+    <span class="md-ellipsis">
+      ResultColumns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-use-put-requests-for-upserts-create-or-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Use PUT requests for upserts (create or update)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-utilise-the-new-response-payload-with-ids-of-created-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Utilise the new response payload with IDs of created records
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    1. Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            1. Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.%20Getting%20Started/04.%20Connecting%20and%20Authenticating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting and Authenticating
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.%20Getting%20Started/05.%20Methods%20and%20response%20codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Methods and Response Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.%20Getting%20Started/06.%20Examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.%20Getting%20Started/07.%20Using%20Postman%20and%20cURL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Postman and cURL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2. Document and API Structure
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            2. Document and API Structure
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20Document%20and%20API%20Structure/08.%20Fundamentals%20and%20data%20model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamentals and data model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20Document%20and%20API%20Structure/09.%20OpenAPI%20definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI Definition and Endpoints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20Document%20and%20API%20Structure/11.%20Key%20fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20Document%20and%20API%20Structure/12.%20Custom%20field%20handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Field Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3. Using the API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            3. Using the API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Using%20the%20API/13.%20Query%20Parameters%20and%20Filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working with Query Parameters and Filters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Using%20the%20API/14.%20Save%20Arguments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Save Arguments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Using%20the%20API/15.%20Upsert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Upsert
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    4. Tuning and Maintenance
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            4. Tuning and Maintenance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.%20Tuning%20and%20Maintenance/16.%20Performance%20Recommendations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Performance Recommendations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.%20Tuning%20and%20Maintenance/17.%20Known%20Issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Known Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Webhooks Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Webhooks Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/1.%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Webhooks Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/2.%20Webhooks%20What%27s%20New/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Webhooks What's New
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/3.%20Outbound%20Connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Outbound Connection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/4.%20Export%20Adaptor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Export Adaptor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/5.%20Event%20Trigger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Event Trigger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/6.%20Export%20Adaptor%20Logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Export Adaptor Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/7.%20Tips%20and%20Troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tips and Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#changes-in-v2-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes in v2 API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changes in v2 API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#payload-structure-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Payload structure changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrating-to-api-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrating to API v2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migrating to API v2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-change-your-url-to-the-v2-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Change your URL to the v2 path.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-update-to-handle-the-improved-payload-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Update to handle the improved payload structure.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Update to handle the improved payload structure.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-jm_job-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET Jm_Job v1:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-jm_job-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET Jm_Job v2:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-xmtransmissionorder-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST XmTransmissionOrder v1:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-xmtransmissionorder-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST XmTransmissionOrder v2:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-utilise-new-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Utilise new parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Utilise new parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nullvaluehandlingignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      NullValueHandling=ignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternatekeyhandlingignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      AlternateKeyHandling=ignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultcolumns" class="md-nav__link">
+    <span class="md-ellipsis">
+      ResultColumns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-use-put-requests-for-upserts-create-or-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Use PUT requests for upserts (create or update)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-utilise-the-new-response-payload-with-ids-of-created-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Utilise the new response payload with IDs of created records
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Deprecation of REST API v1</h1>
+
+<p>REST API v1 was the first Xytech REST API product. It had limitations that required breaking changes to improve so v2 was made available from Xytech v9.4 with improved functionality.</p>
+<p>REST API v1 is no longer supported in version 11.0 and beyond.  </p>
+<p>REST API v1 will no longer work from v11.1  </p>
+<p>All new integrations should use API v2 and existing integrations should port to v2.  </p>
+<p>To use v2 API, change the base URL version number from ../v1/.. to ../v2/..</p>
+<h2 id="changes-in-v2-api">Changes in v2 API</h2>
+<h3 id="payload-structure-changes">Payload structure changes</h3>
+<p align="justify">The payload structure has been enhanced to be more robust and scalable.
+The primary data object name is now always added as the root element of the payload with an array containing the details. 
+v2 handles sub tables more gracefully and respects the hierarchy of the tables. With v1, the sub tables were often added to the bottom of the payload at the root level, which made it difficult to determine the relationship between tables and their sub items. With v2, the table names are included in the payload and the sub tables are added as children to maintain the relationships.</p>
+
+<p><em>Example showing the root element for JmJob</em></p>
+<table>
+<thead>
+<tr>
+<th>API v1 JSON structure</th>
+<th>API v2 JSON structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" href="../5.%20assets/Pasted%20image%2020240730142842.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../5.%20assets/Pasted%20image%2020240730142842.png" /></a></td>
+<td><a class="glightbox" href="../5.%20assets/Pasted%20image%2020240730142900.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../5.%20assets/Pasted%20image%2020240730142900.png" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>All sub-tables are offset from the root object.<br />
+See the OpenAPI documentation for details of the JSON structure for each endpoint.</p>
+<p>In addition, v2 has many enhancements as detailed in this document.</p>
+<h2 id="migrating-to-api-v2">Migrating to API v2</h2>
+<p>To assist, below are main steps needed to migrate to API v2:<br />
+1. Change your URL to use the v2 path.<br />
+2. Adapt to the new and improved payload structure.<br />
+3. Utilise new parameters</p>
+<h3 id="1-change-your-url-to-the-v2-path">1. Change your URL to the v2 path.</h3>
+<p>API v1<br />
+<code>http://domain/api/v1/database/XYT_MAIN_V</code></p>
+<p>API v2<br />
+<code>http://domain/api/v2/database/XYT_MAIN_V</code></p>
+<h3 id="2-update-to-handle-the-improved-payload-structure">2. Update to handle the improved payload structure.</h3>
+<p>The main difference is that v2 handles sub tables more gracefully and respects the hierarchy of the tables especially when making POST calls. See the examples below:</p>
+<h4 id="get-jm_job-v1">GET Jm_Job v1:</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;cust_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;cust_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;cust_reference&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;list_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;other_cust_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;80000016-1475102220&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;customer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Xytech Systems (80000016-1475102220)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;division_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;division_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BUR&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;division_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Burbank&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;division_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;jm_episode&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;episode_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Come, Now is the Time to Worship&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;episode_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;job_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;jm_installment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;installment_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;First installment&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;installment_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1486</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;job_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;job_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;external_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;job_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;other_cust_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;80000016-1475102220&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="get-jm_job-v2">GET Jm_Job v2:</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;jm_job&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;job_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;job_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;division_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;division_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;cust_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;cust_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;customer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Xytech Systems (80000016-1475102220)&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hungary&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;job_type_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;job_type_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1158</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;jm_episode&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;job_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;episode_det_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;episode_det_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;episode_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;episode_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Come, Now is the Time to Worship&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;jm_installment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;installment_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;installment_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1486</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;installment_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;First installment&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;term_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;term_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;invoice_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;invoice_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="post-xmtransmissionorder-v1">POST XmTransmissionOrder v1:</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;wo_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot; AS XM Test 7&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;wo_begin_dt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-07T00:00:00-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;wo_end_dt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-07T00:00:00-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;wo_type_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;wo_type_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3301</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;phase_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;phase_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Conf&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;cust_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;list_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;403&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;xm_mode_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;xm_mode_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;xm_mode_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="post-xmtransmissionorder-v2">POST XmTransmissionOrder v2:</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;jm_work_order&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;wo_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot; AS XM Test 7&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;wo_begin_dt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-07T00:00:00-07:00&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;wo_end_dt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-07T00:00:00-07:00&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;wo_type_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;wo_type_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3301</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;phase_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;phase_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Conf&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;cust_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;list_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;403&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;xm_mode_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;xm_mode_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;xm_mode_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;mo_service_row&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;service_row_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;service_row_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;service_header&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Y&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;service_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;service_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">482</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;service_profile_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;service_profile_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1264</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;service_status_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;service_status_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;service_status_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RDY&quot;</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;service_profile_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Media Broadcast BNS&quot;</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;service_row_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;service_row_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-2</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;service_header&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;service_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;service_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">482</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;service_profile_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;service_profile_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1264</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;service_status_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;service_status_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;service_status_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RDY&quot;</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;parent_service_row_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;service_profile_desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Media Broadcast BNS&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;mo_operation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                        </span><span class="p">{</span>
+<span class="w">                            </span><span class="nt">&quot;operation_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;operation_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;task_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;task_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;task_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ALW&quot;</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;service_row_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;status_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;task_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ALW&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;trx_group_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;group_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0004S&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;trx_group_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0004S&quot;</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;trx_resource_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;resource_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FCR10&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;trx_resource_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FCR10&quot;</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;trx_phase_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;phase_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Conf&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;trx_phase_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Conf&quot;</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;trx_sched_qty&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;lock_billing_unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N&quot;</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">]</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="3-utilise-new-parameters">3. Utilise new parameters</h3>
+<p>To improve responsiveness and design efficient integrations.<br />
+The following additional URL parameters were added for GET requests:</p>
+<h4 id="nullvaluehandlingignore">NullValueHandling=ignore</h4>
+<p>This parameter removes all the fields with null values from the result set.</p>
+<h4 id="alternatekeyhandlingignore">AlternateKeyHandling=ignore</h4>
+<p>This parameter instructs the API to not resolve the alternate keys in the payload for GET requests. The highlighted items are removed from the result set:<br />
+<a class="glightbox" href="../assets/Pasted%20image%2020240807225619.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/Pasted%20image%2020240807225619.png" /></a></p>
+<p>Best practice:</p>
+<h4 id="resultcolumns">ResultColumns</h4>
+<p>Always filter a GET call using resultColumns parameter so that you only return the fields you need.</p>
+<h3 id="4-use-put-requests-for-upserts-create-or-update">4. Use PUT requests for upserts (create or update)</h3>
+<p>Avoids making additional calls to check whether a record already exists before creating/updating it.</p>
+<h3 id="5-utilise-the-new-response-payload-with-ids-of-created-records">5. Utilise the new response payload with IDs of created records</h3>
+<p>POST XmTransmissionOrder response payload with record IDs<br />
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tables&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;jm_work_order&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;mo_service_row&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;mo_operation&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;jm_work_order&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;record_identifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;wo_no_seq&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;records&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;wo_no_seq&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1067998-1&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;mo_service_row&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;record_identifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;service_row_no&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;records&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;service_row_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">217413</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;service_row_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">217414</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;mo_operation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;record_identifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;operation_no&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;records&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;operation_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">128370</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;operation_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">128371</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../02.%20What%27s%20New/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What&#39;s New">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                What's New
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../1.%20Getting%20Started/04.%20Connecting%20and%20Authenticating/" class="md-footer__link md-footer__link--next" aria-label="Next: Connecting and Authenticating">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Connecting and Authenticating
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Xytech Systems Inc.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.footer", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
