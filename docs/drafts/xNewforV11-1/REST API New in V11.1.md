@@ -10,6 +10,9 @@ Division-Code : BUR
 [Feature 13684](https://dev.azure.com/xytsystems/Xytech%20Platform/_workitems/edit/13684)
 
 [Feature 9796](https://dev.azure.com/xytsystems/Xytech%20Platform/_workitems/edit/9796)
+
+## Response body on creation
+Now includes sub-table IDs of created sub-table records.
 ## Attachment File Upload
 
 The REST API now provides the ability to upload an attachment file that auto creates the attachment record. The file type needs to already exist as a defined Attachment Type to be successfully uploaded. The ability to delete is also provided.
