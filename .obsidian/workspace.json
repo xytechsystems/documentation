@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "dd0360028f643dee",
+        "id": "67bd1e1ce7391d29",
         "type": "tabs",
         "children": [
           {
-            "id": "83b4145fc4e26dc4",
+            "id": "b05e3c328d5fad3e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "17. Known Issues"
+              "title": "New tab"
             }
           }
         ]
@@ -136,11 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of 17. Known Issues"
+              "title": "Outline"
             }
           }
         ],
@@ -160,12 +154,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83b4145fc4e26dc4",
+  "active": "b05e3c328d5fad3e",
   "lastOpenFiles": [
+    "docs/REST-API Guide/3. Using the API/13. Query Parameters and Filters.md",
+    "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
     "docs/drafts/xNewforV11-1/REST API New in V11.1.md",
     "docs/drafts/xNewforV11-1/Webhooks New for v11.1.md",
     "docs/Webhooks Guide/2. Webhooks What's New.md",
-    "docs/REST-API Guide/4. Tuning and Maintenance/17. Known Issues.md",
     "docs/REST-API Guide/2. Document and API Structure/11. Key fields.md",
     "docs/REST-API Guide/1. Getting Started/05. Methods and response codes.md",
     "docs/REST-API Guide/02. What's New.md",
@@ -203,7 +198,6 @@
     "docs/index.md",
     "docs/REST-API Guide/2. Document and API Structure/09. OpenAPI definition.md",
     "docs/REST-API Guide/4. Tuning and Maintenance/16. Performance Recommendations.md",
-    "docs/REST-API Guide/3. Using the API/13. Query Parameters and Filters.md",
     "docs/x New for v11.1/New in V11.1.md",
     "docs/REST-API Guide/Test Canvas.canvas",
     "docs/REST-API Guide/4. Tuning and Maintenance",
