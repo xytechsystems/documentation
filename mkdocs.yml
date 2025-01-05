@@ -1,13 +1,13 @@
 # Project information
 site_name: Xytech API Documentation
-site_url: https://peterhissey.github.io/documentation
+site_url: https://xytechsystems.github.io/documentation/
 
 # Repository
-#repo_url: https://github.com/PeterHissey/documentation
+#repo_url: https://github.com/xytechsystems/documentation
 #edit_uri: /tree/main/docs
 
 # Copyright
-copyright: Copyright &copy; 2024 Xytech Systems Inc.
+copyright: Copyright &copy; 2025 Xytech Systems Inc.
 
 # Configuration
 theme:
