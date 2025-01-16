@@ -1,5 +1,6 @@
 ---
 title: Event Trigger
+weight: 5
 ---
 The Webhooks functionality builds on the existing Event Trigger features of the Media Operations Platform, providing a notification template option where you can assign an Export Adaptor and the payload template.
 

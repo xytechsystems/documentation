@@ -1,7 +1,8 @@
 ---
-title: REST API Introduction
+title: Introduction
+weight: 1
 ---
-![](5.%20assets/Pasted%20image%2020240801230729.png)
+![](assets/Pasted%20image%2020240801230729.png)
 ## v11.0
 The Xytech platform provides a REST API that makes it possible to create integrations and custom workflows with 3rd party systems.
 

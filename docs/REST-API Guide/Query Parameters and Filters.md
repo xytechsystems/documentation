@@ -1,5 +1,6 @@
 ---
 title: Working with Query Parameters and Filters
+weight: 23
 ---
 ## Query Parameter
 **GET** and **PATCH** List endpoints require query parameters.
@@ -18,7 +19,7 @@ Such as:
 
 In the simplest form, the value is a single piece of information, such as a string or integer. In more complex forms, the value is a JSON object containing specific formats as described below.
 
-See section regarding **URL encoding** requirements: [URL encoding of special characters](13.%20Query%20Parameters%20and%20Filters.md#URL%20encoding%20of%20special%20characters)
+See section regarding **URL encoding** requirements: [URL encoding of special characters](Query%20Parameters%20and%20Filters.md#URL%20encoding%20of%20special%20characters)
 
 ## Query Filters
 
@@ -42,7 +43,7 @@ To return items that fall between a specified minimum and maximum numeric value.
 
 ### In
 To return items that match one of the values provided in a given set of values.
-See section below on wildcards [Searching for multiple wildcard values](13.%20Query%20Parameters%20and%20Filters.md#Searching%20for%20multiple%20wildcard%20values)
+See section below on wildcards [Searching for multiple wildcard values](Query%20Parameters%20and%20Filters.md#Searching%20for%20multiple%20wildcard%20values)
 
 | Description | Parameter values                                           |
 | ----------- | ---------------------------------------------------------- |

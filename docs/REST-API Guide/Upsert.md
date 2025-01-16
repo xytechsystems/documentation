@@ -1,5 +1,6 @@
 ---
 title: Upsert
+weight: 25
 ---
 Upsert provides the ability to create records if they don't already exist, or update them if they do. Upsert functionality is provided using the PUT method and is available on all maintenance document types. (v11.0+)
 

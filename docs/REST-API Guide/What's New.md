@@ -1,9 +1,10 @@
 ---
 title: What's New
+weight: 2
 ---
 ## <font color="#c00000">v11.0</font>  
 ## 'upsert' is now supported via the PUT method
-Ability to create or update if record already exists. see: [Upsert](3.%20Using%20the%20API/15.%20Upsert.md)
+Ability to create or update if record already exists. see: [Upsert](Upsert.md)
 
 ## Compression is now supported
 Compression is enabled by default when making calls using a standard header:  

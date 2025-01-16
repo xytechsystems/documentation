@@ -1,5 +1,6 @@
 ---
 title: Export Adaptor Logs
+weight: 6
 ---
 
 When Export Adaptors are enabled for logging, all Export Adaptor communications will be logged into the Export Adaptor Log to assist with auditing and troubleshooting. (By default, logging is enabled for all adaptors.) From the navigation menu, click **System** and click **Export Adaptor Logs** to view the log entries.

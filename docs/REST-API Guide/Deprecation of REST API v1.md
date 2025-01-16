@@ -1,5 +1,6 @@
 ---
 title: Deprecation of REST API v1
+weight: 3
 ---
 
 REST API v1 was the first Xytech REST API product. It had limitations that required breaking changes to improve so v2 was made available from Xytech v9.4 with improved functionality.
@@ -23,7 +24,7 @@ v2 handles sub tables more gracefully and respects the hierarchy of the tables. 
 
 | API v1 JSON structure                           | API v2 JSON structure                           |
 | ----------------------------------------------- | ----------------------------------------------- |
-| ![](5.%20assets/Pasted%20image%2020240730142842.png) | ![](5.%20assets/Pasted%20image%2020240730142900.png) |
+| ![](assets/Pasted%20image%2020240730142842.png) | ![](assets/Pasted%20image%2020240730142900.png) |
 
 
 

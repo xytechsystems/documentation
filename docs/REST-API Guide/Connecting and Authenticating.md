@@ -1,5 +1,6 @@
 ---
 title: Connecting and Authenticating
+weight: 14
 ---
 ## Licensing
 The REST API is licensed a component of the Platform’s Application Server. 

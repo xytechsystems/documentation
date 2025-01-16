@@ -1,11 +1,12 @@
 ---
 title: OpenAPI Definition and Endpoints
+weight: 19
 ---
 ## Summary Index
 From Platform version v10.2, an OpenAPI (previously referred to as Swagger) index page has been introduced to assist in the navigation and generation of OpenAPI definitions. The index page can be found by entering the base URL of your site (you use for accessing the Platform UI) and adding “/ApiDocs” to the end (e.g. `www.xytechexample.com/XYT\_TEST/ApiDocs`). The Xytech API Index page is displayed. 
 
 *API Index Page*
-![](../5.%20assets/Pasted%20image%2020240730145018.png)
+![](assets/Pasted%20image%2020240730145018.png)
 
 ## Using the Index
 The index page displays groups of endpoints called modules for the selected database. Clicking on a module will reveal the endpoints within that module. Click on an endpoint, and the OpenAPI definition will be generated using the Swagger UI.
@@ -40,7 +41,7 @@ For example:
 `http://myhost:8088/REST/SwaggerUI/dist/index.html?document=JmDivision_v2`
 
 ## Endpoint List
-There are over 1000 individual documents (endpoints) available to the Platform’s REST API. Below is a small sample of those documents. The full list of available documents can be obtained directly from the Platform UI using the Document Customizations list found under the System module. Specific details on each document can be found via the [OpenAPI definition](09.%20OpenAPI%20definition.md) 
+There are over 1000 individual documents (endpoints) available to the Platform’s REST API. Below is a small sample of those documents. The full list of available documents can be obtained directly from the Platform UI using the Document Customizations list found under the System module. Specific details on each document can be found via the [OpenAPI definition](OpenAPI%20definition.md) 
 
 
 <table><tbody><tr><td><strong>ID&nbsp;</strong></td><td><strong>Class Name&nbsp;</strong></td><td><strong>Document Description&nbsp;</strong></td><td><strong>Document Type</strong></td></tr><tr><td>10315&nbsp;</td><td>JmJob&nbsp;</td><td>Job&nbsp;</td><td>Maintenance</td></tr><tr><td>315&nbsp;</td><td>JmJobList&nbsp;</td><td>Jobs&nbsp;</td><td>Select (List)</td></tr><tr><td>10317&nbsp;</td><td>JmJobStatus&nbsp;</td><td>Job Statuses&nbsp;</td><td>Setup</td></tr><tr><td>10318&nbsp;</td><td>JmJobTable1&nbsp;</td><td>Subscription&nbsp;</td><td>Setup</td></tr><tr><td>10322&nbsp;</td><td>JmJobType&nbsp;</td><td>Job Types&nbsp;</td><td>Setup</td></tr><tr><td>359&nbsp;</td><td>JmTrxReport&nbsp;</td><td>Transaction Reports&nbsp;</td><td>Select (List)</td></tr><tr><td>10339&nbsp;</td><td>JmWorkOrder</td><td>Work Order&nbsp;</td><td>Maintenance</td></tr><tr><td>10346&nbsp;</td><td>JmWoTransaction&nbsp;</td><td>Work Order Transactions&nbsp;</td><td>Maintenance</td></tr></tbody></table>

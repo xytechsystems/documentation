@@ -1,5 +1,6 @@
 ---
 title: Performance Recommendations
+weight: 26
 ---
 
 To avoid impacting user experience or other integrations, it is important to utilise the APIs efficiently:

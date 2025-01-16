@@ -1,5 +1,6 @@
 ---
 title: Export Adaptor
+weight: 4
 ---
 Export Adaptors define the endpoint(s) for an Outbound Connection. An Export Adaptor is assigned to a specific Event Trigger so that the triggered payload knows where to be sent.
 

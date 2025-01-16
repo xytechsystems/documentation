@@ -1,5 +1,6 @@
 ---
 title: Methods and Response Codes
+weight: 15
 ---
 
 RESTful services utilize HTTP methods to differentiate between different types of API calls.

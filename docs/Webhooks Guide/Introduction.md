@@ -1,5 +1,6 @@
 ---
 title: Webhooks Introduction
+weight: 1
 ---
 
 Introduced with release v10.4 this feature enables users, through the platform UI, to configure triggers that send API payloads to external Web service endpoints. This mechanism allows external systems to initiate workflows based on Xytech-generated trigger events.

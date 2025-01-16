@@ -16,11 +16,13 @@ theme:
     #- navigation.path
     - navigation.instant
     - navigation.footer
-   # - navigation.sections
+    - navigation.sections # Enable sections are rendered as groups
+    - navigation.expand # Expand sections by default
     - navigation.tracking #the URL in the address bar is automatically updated with the active anchor as highlighted in the table of contents
-   # - navigation.tabs   #When tabs are enabled, top-level sections are rendered in a menu layer below the header
+    - navigation.tabs   #When tabs are enabled, top-level sections are rendered in a menu layer below the header
+    - navigation.tabs.sticky #Always show when scrolling down a page                                                                  
 
-  logo: logo.png
+  logo: assets/logo.png
 
   palette: 
     # Palette toggle for light mode
@@ -44,8 +46,12 @@ plugins:
     - search
     - glightbox
     - callouts
-
-
+    - mkdocs-nav-weight: #Plugin to set display order of pages
+       section_renamed: false
+       index_weight: -10
+       warning: true
+       reverse: false
+       headless_included: false
 extra_css:
   - stylesheets/extra.css
 
@@ -60,13 +66,16 @@ markdown_extensions:
   - pymdownx.tasklist:  #add check box lists
       custom_checkbox: true
 
-#nav:
-#  - Section:
-#   - section/REST-API Guide/'
-#  - 'User Guide': 'user-guide.md'
-#  - 'Bug Tracker': 'REST-API Guide/'
 
 
+# Omit authentication providers - not relevant to API docs
+exclude_docs: |
+ /Auth Providers/
+
+# omit home page from navigation
+not_in_nav: |
+ /index.md          
+   
 
 draft_docs:
   drafts/  # A "drafts" directory anywhere.

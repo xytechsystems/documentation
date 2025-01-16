@@ -1,5 +1,6 @@
 ---
 title: Examples
+weight: 16
 ---
 Some basic examples of API calls
 ## GET

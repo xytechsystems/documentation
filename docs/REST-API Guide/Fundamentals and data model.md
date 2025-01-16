@@ -1,5 +1,6 @@
 ---
 title: Fundamentals and data model
+weight: 18
 ---
 
 The Platform is, at a fundamental level, a system that deals with creating, updating, and utilizing a particular type of data object referred to as a document.
@@ -12,7 +13,7 @@ The Platform is, at a fundamental level, a system that deals with creating, upda
     -   **Maintenance** – generally describes either master data (which are used in transactional data) or transactional data. Maintenance documents often contain one or more sub-tables.
     -   **List** documents provide access to sets of other records, such as Setup and Maintenance documents.
 
-The Platform REST API is JSON-based and has Open API v3.0 API specifications for each API call available in YAML (migrating to JSON from v11.1). These specifications can be retrieved as a plain YAML file and are also readily available to be viewed in a browser through the Swagger UI. See the [OpenAPI definition](09.%20OpenAPI%20definition.md)
+The Platform REST API is JSON-based and has Open API v3.0 API specifications for each API call available in YAML (migrating to JSON from v11.1). These specifications can be retrieved as a plain YAML file and are also readily available to be viewed in a browser through the Swagger UI. See the [OpenAPI definition](OpenAPI%20definition.md)
 
 ## High level data model diagram
 
@@ -21,4 +22,4 @@ This diagram provides you with a high-level understanding of the primary Xytech 
 Below the name of each data object is the REST API endpoint used for accessing the data object. Where ~/ is prefixed before the endpoint, that indicates it is a sub-table endpoint of the primary endpoint. See the OpenAPI definition for full details.
 
 
-![](../5.%20assets/MediaPulse%20primary%20data%20objects-Summary.drawio.png)
+![](assets/MediaPulse%20primary%20data%20objects-Summary.drawio.png)

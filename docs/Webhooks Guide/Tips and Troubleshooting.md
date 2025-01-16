@@ -1,5 +1,6 @@
 ---
 title: Tips and Troubleshooting
+weight: 7
 ---
 ## Email Notification of a failure
 If you want to be notified by email or an alert pop-up when a webhook fails to send or receives an error response, you can set up an additional Event Trigger on the Export Adaptor Log with a condition set to trigger on receiving an error response status code (or whatever is the most appropriate trigger condition for your integration).
