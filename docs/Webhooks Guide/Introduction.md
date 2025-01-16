@@ -1,5 +1,5 @@
 ---
-title: Webhooks Introduction
+title: Introduction
 weight: 1
 ---
 

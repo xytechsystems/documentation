@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Webhooks Guide/index.md",
+                "file": "docs/Webhooks Guide/Export Adaptor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Export Adaptor"
             }
           }
         ]
@@ -137,10 +137,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Webhooks Guide/index.md"
+                "file": "docs/Webhooks Guide/Export Adaptor.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Export Adaptor"
             }
           }
         ],
@@ -164,10 +164,10 @@
   },
   "active": "a88a74f0268eff9a",
   "lastOpenFiles": [
-    "docs/REST-API Guide/index.md",
     "docs/Webhooks Guide/Outbound Connection.md",
-    "docs/Webhooks Guide/index.md",
     "docs/Webhooks Guide/Introduction.md",
+    "docs/Webhooks Guide/index.md",
+    "docs/REST-API Guide/index.md",
     "docs/REST-API Guide/Methods and response codes.md",
     "docs/REST-API Guide/Connecting and Authenticating.md",
     "docs/REST-API Guide/Deprecation of REST API v1.md",
