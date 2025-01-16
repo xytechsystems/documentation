@@ -3,7 +3,9 @@ title: Introduction
 weight: 1
 ---
 ![](assets/Pasted%20image%2020240801230729.png)
-## v11.0
+
+Includes v11.1 (16 Jan 2025)
+
 The Xytech platform provides a REST API that makes it possible to create integrations and custom workflows with 3rd party systems.
 
 You will need:

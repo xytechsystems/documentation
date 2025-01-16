@@ -2,6 +2,80 @@
 title: What's New
 weight: 2
 ---
+## <font color="#c00000">v11.1</font>
+
+## Division
+REST API GET calls now support the ability to pass the Division as an override to the API API user's default Division. 
+
+A new optional header called "Division-Code" exists where you can now include the Division code. This will ensure the correct results are returned for the API users current Division.
+The API user account must have user access to the division to be able to successfully pass it in the API call. If not, you will receive an error message. 
+
+e.g.
+Division-Code : GS
+In Postman:
+![](assets/Pasted%20image%2020250116145717.png)
+
+## Response body on creation
+POST calls now include sub-table IDs of any sub-table records created by the call.
+
+## Attachment File Upload
+The REST API now provides the ability to upload an attachment file that auto creates the attachment record. 
+
+The file type needs to already exist as a defined Attachment Type (System - Setup - Attachment Types) to be successfully uploaded. The ability to delete is also provided.
+
+The attachment record will be auto created assigning the matching Attachment Type and description as the filename.  
+
+Multiple files can be uploaded in a single POST API call.
+Use **form-data** for the body.
+
+Endpoint:
+`/SysAttachment/attachment_keystring=10339:100-1`
+Where *attachment_keystring* is made up of a concatenation of document ID and record ID
+
+e.g. 
+- Document ID for Work Orders = 10339 (see document customisation list for IDs)
+- A specific Work Order ID = 100-1
+The response will include the IDs of the created attachment records.
+
+Full cURL example:
+```BASH
+curl --location 'https://devwcumpapp2.xytech.xytechsystems.com/xyt_main/api/v2/database/XYT_MAIN_RUBY_V/SysAttachment/attachment_keystring=10339:100-1' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic xxxxxxxxxxxxxxxxxxxx' \
+--form '=@"/C:/temp/DetailsOn100-1.txt"' \
+--form '=@"/C:/temp/A File.pdf"'
+```
+
+Postman:
+![](assets/Pasted%20image%2020240626105827.png)
+Delete attachment file example:
+`DELETE {{server}}/SysAttachment/attachment_keystring=10339:100-1/sys_attachment/attachment_no=2205`
+
+## SysContactFacade ability to create User and Vendor profiles
+The existing /SysContactFacade endpoint now supports the creation and updating of User and Vendor contact types (profiles).
+
+## Additional query parameters
+### NOTIN (Not in)
+Ability to query where a field's value does not match an array of supplied values.
+Usage example: {{server}}/PmProjectList?query={"project_desc":{"$notin":["test", "Sarah"]}}
+Applies to GET queries.
+### LIKEAND (Like and)
+Ability to define an array of matching values that all have to match regardless of the order defined. 
+{{server}}/LibMasterList?{"master_desc":{"$LIKEAND":["%Genesis%","%XHD%"]}
+Applies to GET queries.
+
+## Swagger/OpenAPI definition now downloadable as JSON
+The Swagger document definition now provides the ability to download the definition as a JSON file instead of a YAML.
+
+## Link child titles to parent in single API call
+REST API now provides a new endpoint that gives the ability to manage new or existing Titles and assign the Title to a parent Title in a single API call. New endpoint: /LibTitleHierarchyFacade.
+
+## Known issues
+### There are differences in the way Swagger reports a payload definition between POST & GET calls.
+
+Swagger defines the payload for a sub-table GET differently to how the REST API actually responds.
+
+
 ## <font color="#c00000">v11.0</font>  
 ## 'upsert' is now supported via the PUT method
 Ability to create or update if record already exists. see: [Upsert](Upsert.md)

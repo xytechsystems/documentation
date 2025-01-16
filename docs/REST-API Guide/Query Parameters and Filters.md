@@ -93,6 +93,17 @@ curl --location --globoff 'http://{APIbaseURL}/LibMasterList?resultcolumns={"L":
 --data ''
 ```
 
+### NOTIN (Not in)
+(11.1)
+Ability to query where a field's value does not match an array of supplied values.
+Usage example: {{server}}/PmProjectList?query={"project_desc":{"$notin":["test", "Sarah"]}}
+Applies to GET queries.
+### LIKEAND (Like and)
+(11.1)
+Ability to define an array of matching values that all have to match regardless of the order defined. 
+{{server}}/LibMasterList?{"master_desc":{"$LIKEAND":["%Genesis%","%XHD%"]}
+Applies to GET queries.
+
 ## Query Filter Tips
 ### NULL Values
 The Null parameter returns any record that has a null value for the specified key, which indicates that no value has ever been set. This differentiates it from an empty string for text-based or date-based properties, a 0 value for numbers, and true or false values for Boolean properties.
@@ -328,3 +339,16 @@ e.g.  header: `Source-Time-Zone-Name: Pacific Standard Time`
 
 This example will will create records in the time zone of Pacific Standard Time.
 Remember to omit the offset values in your time formats.
+
+## Division 
+(11.1)
+REST API GET calls support the ability to pass the Division as an override to the API API user's default Division. 
+
+An optional header called "Division-Code" exists where you can include the Division code. This will ensure the correct results are returned for the API users when using Divisions.
+The API user account must have been given user access to the division to be able to successfully pass it in the API call. If not, you will receive an error message. 
+
+e.g.
+Division-Code : GS
+
+In postman:
+![](assets/Pasted%20image%2020250116134014.png)
