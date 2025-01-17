@@ -2,6 +2,12 @@
 title: What's New
 weight: 2
 ---
+## <font color="#c00000">v11.1</font>
+## Export Adaptor custom headers override default
+You are now able to add a custom header of 'Content-Type' to an Export Adaptor that will override the default generated Content-Type header. Note: you must flag the custom header as a Content Header.
+
+![|368](../../Webhooks%20Guide/assets/Pasted%20image%2020240702112850.png)
+
 ## <font color="#c00000">v11.0</font>
 ## Response payload parsing and storing of values
 Webhooks now includes the ability to store value(s) received in the response body into a field from the triggered document.
