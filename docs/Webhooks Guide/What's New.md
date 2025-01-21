@@ -8,6 +8,13 @@ You are now able to add a custom header of 'Content-Type' to an Export Adaptor t
 
 ![|368](../../Webhooks%20Guide/assets/Pasted%20image%2020240702112850.png)
 
+## Export Adaptor Logs improved capture of failures
+Webhooks Export Adaptor logging has been enhanced so that errors are logged when the error occurs prior to being able to execute the API call. This gives greater logging visibility to users especially when in the past no log entry would be created and the user would have no awareness.
+
+## Encode illegal characters in outbound payload
+Webhooks Export Adaptor Template now includes encoding of whitespace characters.
+
+
 ## <font color="#c00000">v11.0</font>
 ## Response payload parsing and storing of values
 Webhooks now includes the ability to store value(s) received in the response body into a field from the triggered document.

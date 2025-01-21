@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "51da9dda2850f6e3",
+        "id": "af8739ac664c9808",
         "type": "tabs",
         "children": [
           {
-            "id": "ecc900b231c221b0",
+            "id": "cb0526407197fb3b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/Webhooks Guide/What's New.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "What's New"
             }
           }
         ]
@@ -132,9 +136,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "docs/Webhooks Guide/What's New.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of What's New"
             }
           }
         ],
@@ -142,7 +148,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,18 +161,18 @@
       "nav-weight:Nav Weight: click to disable": false
     }
   },
-  "active": "ecc900b231c221b0",
+  "active": "cb0526407197fb3b",
   "lastOpenFiles": [
+    "docs/Webhooks Guide/What's New.md",
+    "docs/REST-API Guide/What's New.md",
     "docs/REST-API Guide/index.md",
     "docs/Webhooks Guide/index.md",
-    "docs/Webhooks Guide/What's New.md",
     "docs/Webhooks Guide/Export Adaptor.md",
     "docs/drafts/xNewforV11-1/Webhooks New for v11.1.md",
     "docs/REST-API Guide/Query Parameters and Filters.md",
     "docs/REST-API Guide/assets/Pasted image 20250117115119.png",
     "docs/REST-API Guide/assets/Pasted image 20250117115057.png",
     "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
-    "docs/REST-API Guide/What's New.md",
     "docs/drafts/xNewforV11-1/REST API New in V11.1.md",
     "docs/REST-API Guide/assets/Pasted image 20250116145717.png",
     "docs/REST-API Guide/OpenAPI definition.md",
