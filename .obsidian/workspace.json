@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "af8739ac664c9808",
+        "id": "424adac0970f7ea6",
         "type": "tabs",
         "children": [
           {
-            "id": "cb0526407197fb3b",
+            "id": "58a1a23b2b2d5fc9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Webhooks Guide/What's New.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "What's New"
+              "title": "New tab"
             }
           }
         ]
@@ -40,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -137,10 +134,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Webhooks Guide/What's New.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of What's New"
+              "title": "Outline"
             }
           }
         ],
@@ -161,26 +160,30 @@
       "nav-weight:Nav Weight: click to disable": false
     }
   },
-  "active": "cb0526407197fb3b",
+  "active": "58a1a23b2b2d5fc9",
   "lastOpenFiles": [
+    "docs/REST-API Guide/index.md",
+    "docs/REST-API Guide/Fundamentals and data model.md",
+    "docs/REST-API Guide/Examples.md",
+    "docs/REST-API Guide/Methods and response codes.md",
+    "docs/REST-API Guide/Query Parameters and Filters.md",
+    "docs/REST-API Guide/Known Issues.md",
+    "docs/drafts/xNewforV11-1/Webhooks New for v11.2.md",
+    "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
+    "docs/drafts/xNewforV11-1/validateQueryParameters.md",
+    "docs/drafts/xNewforV11-1/assets/Pasted image 20240626105827.png",
     "docs/Webhooks Guide/What's New.md",
     "docs/REST-API Guide/What's New.md",
-    "docs/REST-API Guide/index.md",
     "docs/Webhooks Guide/index.md",
     "docs/Webhooks Guide/Export Adaptor.md",
-    "docs/drafts/xNewforV11-1/Webhooks New for v11.1.md",
-    "docs/REST-API Guide/Query Parameters and Filters.md",
     "docs/REST-API Guide/assets/Pasted image 20250117115119.png",
     "docs/REST-API Guide/assets/Pasted image 20250117115057.png",
-    "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
     "docs/drafts/xNewforV11-1/REST API New in V11.1.md",
     "docs/REST-API Guide/assets/Pasted image 20250116145717.png",
     "docs/REST-API Guide/OpenAPI definition.md",
     "docs/REST-API Guide/Save Arguments.md",
     "docs/drafts/xNewforV11-1/assets/Pasted image 20250116134014.png",
-    "docs/drafts/xNewforV11-1/validateQueryParameters.md",
     "docs/Webhooks Guide/Outbound Connection.md",
-    "docs/REST-API Guide/Methods and response codes.md",
     "docs/REST-API Guide/Connecting and Authenticating.md",
     "docs/REST-API Guide/Deprecation of REST API v1.md",
     "docs/index.md",
@@ -190,7 +193,6 @@
     "docs/Webhooks Guide/assets/Pasted image 20240807141351.png",
     "docs/Webhooks Guide/assets/Pasted image 20240807141340.png",
     "docs/Webhooks Guide/assets/Pasted image 20240807141403.png",
-    "docs/Webhooks Guide/assets/Pasted image 20240807134343.png",
     "docs/Webhooks Guide/Tips and Troubleshooting.md",
     "docs/Webhooks Guide/Event Trigger.md",
     "docs/Webhooks Guide/Export Adaptor Logs.md",
@@ -198,9 +200,6 @@
     "docs/Webhooks Guide",
     "docs/stylesheets/Webhooks Guide/Webhooks What's New.md",
     "docs/stylesheets/Webhooks Guide/Tips and Troubleshooting.md",
-    "docs/stylesheets/Webhooks Guide/Introduction.md",
-    "docs/stylesheets/Webhooks Guide/Outbound Connection.md",
-    "docs/stylesheets/Webhooks Guide/Export Adaptor.md",
     "docs/stylesheets/Webhooks Guide/assets",
     "docs/stylesheets/Webhooks Guide",
     "docs/Auth Providers/assets",

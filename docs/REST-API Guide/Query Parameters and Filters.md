@@ -330,15 +330,17 @@ The REST API uses Date time formats in ISO format with an optional offset value.
 e.g. 2014-11-03T22:20:00+00:00
 
 If you omit the offset value when using POST to create a record, you can use a header parameter to set the time zone your dates are using.  
+The advantage of using this header approach, is that it will respect any daylight savings offset applicable to the date given.
 
 | Header Key            | Header Value             |
 | --------------------- | ------------------------ |
 | Source-Time-Zone-Name | {Windows Time Zone name} |
-
 e.g.  header: `Source-Time-Zone-Name: Pacific Standard Time` 
 
 This example will will create records in the time zone of Pacific Standard Time.
 Remember to omit the offset values in your time formats.
+See link for list of [Windows Time Zones](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11)
+
 
 ## Division 
 (11.1)
