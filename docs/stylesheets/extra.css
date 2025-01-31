@@ -1,5 +1,5 @@
 body {
-  background: rgba(239, 235, 235, 1);
+  background: unset;
   /* or, using CSS variables */
 }
 
