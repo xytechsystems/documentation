@@ -1,7 +1,7 @@
 body {
   background: rgba(239, 235, 235, 1);
   /* or, using CSS variables */
-  --md-default-bg-color: transparent;
+  --md-default-bg-color: rgba(239, 235, 235, 1);
 }
 
 .md-typeset h2{
