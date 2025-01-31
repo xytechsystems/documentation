@@ -1,5 +1,5 @@
 body {
-  background: red;
+  background: rgba(239, 235, 235, 1);
   /* or, using CSS variables */
   --md-default-bg-color: transparent;
 }
