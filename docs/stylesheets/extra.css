@@ -1,7 +1,7 @@
 body {
   background: red;
   /* or, using CSS variables */
-  --md-default-bg-color: red;
+  --md-default-bg-color: transparent;
 }
 
 .md-typeset h2{
