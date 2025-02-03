@@ -3,11 +3,13 @@ title: Known Issues
 weight: 27
 ---
 ## POST & GET payload differences
+
 There are differences in the payload structure between POST & GET calls when filtering by sub-table.
 When using GET to fetch a payload filtered by a sub-table, the payload is missing the sub-table wrapper. The Swagger definition reports the correct payload structure that includes the sub-table wrapper, but that is not what works today.
 A fix would mean a breaking change, so we shall not be correcting this until API v3.
 
 Example of how Swagger defines the GET response payload for a sub-table of /XmTransmissionOrder endpoint, which includes the wrapper in this case mo_service_row.
+
 ```json
 {
   "mo_service_row": [
@@ -23,6 +25,7 @@ Example of how Swagger defines the GET response payload for a sub-table of /XmTr
 ```
 
 Below is how the the endpoint actually responds that excludes the wrapper.
+
 ```json
 [
     {
@@ -47,10 +50,12 @@ Field order should not be a necessity, but to improve this, requires substantial
 Temporally in release v10.6, the format of date time values where all expressed in UTC format instead of with the time offset.
 
 Should look like this:
+
 ```
 "2023-04-21T01:00:00+01:00"
 ```
 For v10.6 the format looked like this:
+
 ```
 "2023-04-21T00:00:00Z"
 ```

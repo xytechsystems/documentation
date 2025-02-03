@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "424adac0970f7ea6",
+        "id": "56e7519a03e0ca73",
         "type": "tabs",
         "children": [
           {
-            "id": "58a1a23b2b2d5fc9",
+            "id": "22c787b4dc0e129d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/REST-API Guide/Known Issues.md",
+                "mode": "preview",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Known Issues"
             }
           }
         ]
@@ -134,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/REST-API Guide/Known Issues.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Known Issues"
             }
           }
         ],
@@ -160,14 +165,18 @@
       "nav-weight:Nav Weight: click to disable": false
     }
   },
-  "active": "58a1a23b2b2d5fc9",
+  "active": "22c787b4dc0e129d",
   "lastOpenFiles": [
+    "docs/REST-API Guide/Query Parameters and Filters.md",
+    "docs/REST-API Guide/Known Issues.md",
+    "docs/REST-API Guide/Custom field handling.md",
+    "docs/REST-API Guide/Key fields.md",
+    "docs/REST-API Guide/Upsert.md",
+    "docs/REST-API Guide/Performance Recommendations.md",
     "docs/REST-API Guide/index.md",
     "docs/REST-API Guide/Fundamentals and data model.md",
     "docs/REST-API Guide/Examples.md",
     "docs/REST-API Guide/Methods and response codes.md",
-    "docs/REST-API Guide/Query Parameters and Filters.md",
-    "docs/REST-API Guide/Known Issues.md",
     "docs/drafts/xNewforV11-1/Webhooks New for v11.2.md",
     "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
     "docs/drafts/xNewforV11-1/validateQueryParameters.md",
@@ -194,12 +203,8 @@
     "docs/Webhooks Guide/assets/Pasted image 20240807141340.png",
     "docs/Webhooks Guide/assets/Pasted image 20240807141403.png",
     "docs/Webhooks Guide/Tips and Troubleshooting.md",
-    "docs/Webhooks Guide/Event Trigger.md",
-    "docs/Webhooks Guide/Export Adaptor Logs.md",
     "docs/Webhooks Guide/assets",
     "docs/Webhooks Guide",
-    "docs/stylesheets/Webhooks Guide/Webhooks What's New.md",
-    "docs/stylesheets/Webhooks Guide/Tips and Troubleshooting.md",
     "docs/stylesheets/Webhooks Guide/assets",
     "docs/stylesheets/Webhooks Guide",
     "docs/Auth Providers/assets",
