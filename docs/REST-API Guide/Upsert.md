@@ -1,8 +1,44 @@
 ---
-title: Upsert
+title: Upsert / PUT
 weight: 25
 ---
 Upsert provides the ability to create records if they don't already exist, or update them if they do. Upsert functionality is provided using the PUT method and is available on all maintenance document types. (v11.0+)
+
+## PUT payload concepts
+The most common use of the PUT method will be where a 3rd party identifier is known and you wish to create or update a Xytech record.
+The external identifier is likely to be stored in the "external_key" field of the record.
+What is important, is to supply the external_key field 
+1. In the URL
+2. As a lookup field in the payload within the key field object
+3. Within the root body of the payload
+This will ensure correct insert or update functionality.
+
+Example to upsert a Job:
+```json
+curl --location --request PUT 'https://{APIbaseURL}/JmJob/external_key=PH20250205a' \
+--header 'Content-Type: application/json-patch+json' \
+--header 'Authorization: Basic ********' \
+--data '{
+    "jm_job": [
+        {
+            "job_no": {
+                "external_key": "PH20250205a"
+            },
+            "external_key": "PH20250205a",
+            "division_no": 12,
+            "cust_id": "010",
+            "job_desc": "test2",
+            "job_type_no": 163,
+            "account_rep_no_1": 18,
+            "active": "Y"
+        }
+    ]
+}'
+```
+
+You will receive the ID of the created record if one does not already exist matching the external_key.
+If you send the same payload again, you will receive a 2xx success code, no new ID as the record already exists (any changes would update the record).
+
 
 See the OpenAPI definition on endpoint details and the Postman collection for examples.
 
