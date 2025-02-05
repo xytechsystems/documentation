@@ -7,10 +7,11 @@ Upsert provides the ability to create records if they don't already exist, or up
 ## PUT payload concepts
 The most common use of the PUT method will be where a 3rd party identifier is known and you wish to create or update a Xytech record.
 The external identifier is likely to be stored in the "external_key" field of the record.
+
 What is important, is to supply the external_key field 
 1. In the URL
-2. As a lookup field in the payload within the key field object
-3. Within the root body of the payload
+2. As a payload field within the key field object (this is for lookup of existing record)
+3. Within the root body of the payload (this is for inserting the value)
 This will ensure correct insert or update functionality.
 
 Example to upsert a Job:
