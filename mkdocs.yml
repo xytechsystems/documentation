@@ -22,7 +22,7 @@ theme:
     - navigation.tabs   #When tabs are enabled, top-level sections are rendered in a menu layer below the header
     - navigation.tabs.sticky #Always show when scrolling down a page                                                                  
 
-  logo: assets/xlogo.png
+  logo: assets/xLogo.png
 
   palette: 
     # Palette toggle for light mode
