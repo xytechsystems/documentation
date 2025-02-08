@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/REST-API Guide/index.md",
+                "file": "docs/Webhooks Guide/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/REST-API Guide/index.md",
+                "file": "docs/Webhooks Guide/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -167,12 +167,16 @@
   },
   "active": "1223e62593d04907",
   "lastOpenFiles": [
+    "docs/Webhooks Guide/assets/Pasted image 20250208155704.png",
+    "docs/Webhooks Guide/assets/Pasted image 20250208155129.png",
+    "docs/Webhooks Guide/assets/Pasted image 20250208155031.png",
+    "docs/Webhooks Guide/assets/Pasted image 20250208153334.png",
+    "docs/REST-API Guide/index.md",
     "docs/assets/XLogo.png",
     "docs/assets/X Logo.png",
     "docs/REST-API Guide/assets/Pasted image 20250208141102.png",
     "docs/REST-API Guide/Upsert.md",
     "docs/REST-API Guide/Examples.md",
-    "docs/REST-API Guide/index.md",
     "docs/Webhooks Guide/index.md",
     "docs/REST-API Guide/Known Issues.md",
     "docs/REST-API Guide/Query Parameters and Filters.md",
@@ -194,15 +198,11 @@
     "docs/REST-API Guide/assets/Pasted image 20250116145717.png",
     "docs/REST-API Guide/OpenAPI definition.md",
     "docs/REST-API Guide/Save Arguments.md",
-    "docs/drafts/xNewforV11-1/assets/Pasted image 20250116134014.png",
     "docs/Webhooks Guide/Outbound Connection.md",
     "docs/REST-API Guide/Connecting and Authenticating.md",
     "docs/REST-API Guide/Deprecation of REST API v1.md",
     "docs/index.md",
     "README.md",
-    "docs/Webhooks Guide/assets/Pasted image 20241024105233.png",
-    "docs/Webhooks Guide/assets/Pasted image 20240807130424.png",
-    "docs/Webhooks Guide/assets/Pasted image 20240807141351.png",
     "docs/Webhooks Guide/assets",
     "docs/Webhooks Guide",
     "docs/stylesheets/Webhooks Guide/assets",
