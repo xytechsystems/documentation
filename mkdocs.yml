@@ -22,11 +22,11 @@ theme:
     - navigation.tabs   #When tabs are enabled, top-level sections are rendered in a menu layer below the header
     - navigation.tabs.sticky #Always show when scrolling down a page                                                                  
 
-  logo: assets/logo.png
+  logo: assets/xlogo.png
 
   palette: 
     # Palette toggle for light mode
-    - scheme: default
+    - scheme: xytech
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode

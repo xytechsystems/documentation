@@ -1,3 +1,11 @@
+[data-md-color-scheme="xytech"] {
+  --md-default-bg-color: unset;/* Nav header background */
+  --md-primary-fg-color:        #3BADBD;/* Page Header Fabric color */
+  --md-primary-fg-color--light: #3BADBD;
+  --md-primary-fg-color--dark:  #3BADBD;
+}
+
+
 body {
   background: unset;
   /* or, using CSS variables */
@@ -10,7 +18,8 @@ body {
 
 /* Dark mode */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: black;
+  --md-default-bg-color: black;/* Nav header background */
+  --md-primary-fg-color: #3BADBD; /* Page Header Fabric color */
 }
 
 .md-typeset h2{

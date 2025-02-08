@@ -2,7 +2,7 @@
 title: REST API Introduction
 weight: 1
 ---
-![](assets/Pasted%20image%2020240801230729.png)
+![](assets/Pasted%20image%2020250208141102.png)
 
 Includes v11.1 
 

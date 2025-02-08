@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/REST-API Guide/Upsert.md",
+                "file": "docs/REST-API Guide/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Upsert"
+              "title": "index"
             }
           }
         ]
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/REST-API Guide/Upsert.md",
+                "file": "docs/REST-API Guide/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Upsert"
+              "title": "Outline of index"
             }
           }
         ],
@@ -167,6 +167,10 @@
   },
   "active": "1223e62593d04907",
   "lastOpenFiles": [
+    "docs/assets/XLogo.png",
+    "docs/assets/X Logo.png",
+    "docs/REST-API Guide/assets/Pasted image 20250208141102.png",
+    "docs/REST-API Guide/Upsert.md",
     "docs/REST-API Guide/Examples.md",
     "docs/REST-API Guide/index.md",
     "docs/Webhooks Guide/index.md",
@@ -174,7 +178,6 @@
     "docs/REST-API Guide/Query Parameters and Filters.md",
     "docs/REST-API Guide/Custom field handling.md",
     "docs/REST-API Guide/Key fields.md",
-    "docs/REST-API Guide/Upsert.md",
     "docs/REST-API Guide/Performance Recommendations.md",
     "docs/REST-API Guide/Fundamentals and data model.md",
     "docs/REST-API Guide/Methods and response codes.md",
@@ -200,9 +203,6 @@
     "docs/Webhooks Guide/assets/Pasted image 20241024105233.png",
     "docs/Webhooks Guide/assets/Pasted image 20240807130424.png",
     "docs/Webhooks Guide/assets/Pasted image 20240807141351.png",
-    "docs/Webhooks Guide/assets/Pasted image 20240807141340.png",
-    "docs/Webhooks Guide/assets/Pasted image 20240807141403.png",
-    "docs/Webhooks Guide/Tips and Troubleshooting.md",
     "docs/Webhooks Guide/assets",
     "docs/Webhooks Guide",
     "docs/stylesheets/Webhooks Guide/assets",
