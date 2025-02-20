@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/REST-API Guide/Key fields and time formats.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Key fields and time formats"
             }
           }
         ]
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/REST-API Guide/Key fields and time formats.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Key fields and time formats"
             }
           }
         ],
@@ -167,6 +167,15 @@
   },
   "active": "1223e62593d04907",
   "lastOpenFiles": [
+    "docs/REST-API Guide/Query Parameters and Filters.md",
+    "docs/REST-API Guide/Key fields and time formats.md",
+    "docs/REST-API Guide/Custom field handling.md",
+    "docs/REST-API Guide/Save Arguments.md",
+    "docs/REST-API Guide/Upsert.md",
+    "docs/REST-API Guide/Fundamentals and data model.md",
+    "docs/REST-API Guide/Methods and response codes.md",
+    "docs/REST-API Guide/Examples.md",
+    "docs/index.md",
     "docs/assets/Pasted image 20250208163000.png",
     "docs/Webhooks Guide/index.md",
     "docs/assets/xLogo.png",
@@ -179,16 +188,8 @@
     "docs/REST-API Guide/index.md",
     "docs/assets/XLogo.png",
     "docs/assets/X Logo.png",
-    "docs/REST-API Guide/assets/Pasted image 20250208141102.png",
-    "docs/REST-API Guide/Upsert.md",
-    "docs/REST-API Guide/Examples.md",
     "docs/REST-API Guide/Known Issues.md",
-    "docs/REST-API Guide/Query Parameters and Filters.md",
-    "docs/REST-API Guide/Custom field handling.md",
-    "docs/REST-API Guide/Key fields.md",
     "docs/REST-API Guide/Performance Recommendations.md",
-    "docs/REST-API Guide/Fundamentals and data model.md",
-    "docs/REST-API Guide/Methods and response codes.md",
     "docs/drafts/xNewforV11-1/Webhooks New for v11.2.md",
     "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
     "docs/drafts/xNewforV11-1/validateQueryParameters.md",
@@ -197,11 +198,9 @@
     "docs/Webhooks Guide/Export Adaptor.md",
     "docs/drafts/xNewforV11-1/REST API New in V11.1.md",
     "docs/REST-API Guide/OpenAPI definition.md",
-    "docs/REST-API Guide/Save Arguments.md",
     "docs/Webhooks Guide/Outbound Connection.md",
     "docs/REST-API Guide/Connecting and Authenticating.md",
     "docs/REST-API Guide/Deprecation of REST API v1.md",
-    "docs/index.md",
     "README.md",
     "docs/Webhooks Guide/assets",
     "docs/Webhooks Guide",

@@ -1,5 +1,5 @@
 ---
-title: Key Fields
+title: Key Fields and time formats
 weight: 21
 ---
 Each payload contains a nested sub-section of key fields which are used for the lookup of records by a key field. This sub-subsection is identified by the primary key field name. 
@@ -165,3 +165,38 @@ Example:
 Be aware some fields are mandatory, and are defined in the OpenAPI definition.
 
 The id of the created record is returned in the response payload.
+
+## Time formats
+
+Date time formats used by the REST API follow ISO-8601 standards. `YYYY-MM-DDThh:mm:ss.sTZD`
+
+Times are stored in the Xytech database as UTC times 
+(the exception being when the Master Time Zone is not set to UTC, which is a legacy option)
+
+As a general the recommendation is to work in UTC times or local times using the Time Zone Header attribute.
+
+### POST, PUT and PATCH Examples
+
+UTC time format:
+2025-02-20T10:00:00.000Z
+2025-02-20T10:00:00Z
+
+Or
+Using time zone offset:
+2025-02-16T04:00:00-05:00
+
+Or
+use the header 'Source-Time-Zone-Name' to define the time zone.
+e.g.  header: `Source-Time-Zone-Name: Pacific Standard Time` 
+
+Use this if you want to supply API payload times in local times, any DST offsets will be auto calculated when the system stores the UTC time into the database.
+
+This will override any time zone offset supplied.
+
+### GET and response payloads
+Will respond with the offset attribute.
+2025-02-20T10:00:00+00:00
+
+(Note any offset is determined by the app server time zone , normally set to UTC, the time plus offset will be the UTC time)
+
+
