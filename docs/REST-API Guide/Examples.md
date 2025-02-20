@@ -21,9 +21,12 @@ Response:
                 "wo_no_seq": "2627-1"
             },
             "wo_desc": "Dscription2",
-            "wo_begin_dt": "2023-04-21T00:00:00Z",
-            "wo_end_dt": "2023-04-22T00:00:00Z",
-            "sched_by_name": "Xytech Support"
+            "wo_begin_dt": "2000-03-31T02:30:00-08:00",
+            "wo_end_dt": "2000-03-31T05:30:00-08:00",
+            "wo_type_no": {
+                "wo_type_no": 3275,
+                "wo_type_desc": "Production"
+            }
         }
     ]
 }
