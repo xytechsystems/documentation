@@ -2,6 +2,18 @@
 title: What's New
 weight: 2
 ---
+## <font color="#c00000">v11.2</font>
+Fixes
+## JmWoTransaction
+Resolved an issue where the API documentation for JmWoTransaction incorrectly omitted the required wo_no_seq parameter.
+
+## API Pagination Count incorrect value for pages after 1
+Resolves a REST API pagination issue, where the Pagination Count (found in the response header) was responding with in incorrect value.
+
+## Error Loading Service Templates
+Resolves an issue when creating a Media Order or Transmission Order via the REST API where a service row field value was set incorrectly (dsp_seq), creating invalid orders.
+
+
 ## <font color="#c00000">v11.1</font>
 
 ## Division
