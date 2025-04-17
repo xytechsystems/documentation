@@ -36,10 +36,11 @@ To return items that match a specified string. The string can either be letters 
 ### Range
 To return items that fall between a specified minimum and maximum numeric value.
 
-| Description | Parameter values                                                                                                                                                               |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Syntax      | query="field":{"$range":[lower_limit, upper_limit]}                                                                                                                            |
-| Examples    | query={"job_no":{"range":[100, 199]}}<br>query={"wo_begin_dt":{"range":"2023-12-01","2023-12-31"}}  <br>query={"wo_begin_dt":{"$range":"2023-06-01T09:00","2023-06-01T17:00"}} |
+| Description | Parameter values                                                                                                                                                                   |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Syntax      | query="field":{"$range":[lower_limit, upper_limit]}                                                                                                                                |
+| Examples    | query={"job_no":{"\$range":[100, 199]}}<br>query={"wo_begin_dt":{"\$range":"2023-12-01","2023-12-31"}}  <br>query={"wo_begin_dt":{"$range":"2023-06-01T09:00","2023-06-01T17:00"}} |
+|             |                                                                                                                                                                                    |
 
 ### In
 To return items that match one of the values provided in a given set of values.
