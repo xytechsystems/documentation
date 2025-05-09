@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "05f8d281ffbdf347",
+        "id": "b031bf80a5cf141a",
         "type": "tabs",
         "children": [
           {
-            "id": "b6e459518f35e80e",
+            "id": "29168a7265f9e8b5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -134,12 +134,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/drafts/New for 11.3/11.3 What's new webhooks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 11.3 What's new webhooks"
             }
           }
         ],
@@ -147,7 +148,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,20 +158,33 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "nav-weight:Nav Weight: click to disable": false
     }
   },
-  "active": "b6e459518f35e80e",
+  "active": "29168a7265f9e8b5",
   "lastOpenFiles": [
+    "docs/REST-API Guide/Query Parameters and Filters.md",
+    "docs/drafts/11.4 What's new.md",
+    "docs/drafts/New for 11.3/11.3 What's new REST API.md",
+    "docs/drafts/New for 11.3/11.3 What's new webhooks.md",
+    "docs/REST-API Guide/Methods and response codes.md",
+    "docs/REST-API Guide/Examples.md",
+    "docs/REST-API Guide/Fundamentals and data model.md",
+    "docs/REST-API Guide/OpenAPI definition.md",
+    "docs/REST-API Guide/Upsert.md",
+    "docs/drafts/New for 11.3/assets/Pasted image 20250328133059.png",
+    "docs/drafts/New for 11.3/assets/Pasted image 20250328121552.png",
+    "docs/drafts/New for 11.3/assets",
+    "docs/Webhooks Guide/What's New.md",
+    "docs/Auth Providers/OpenID Configuration User Guide.md",
+    "docs/drafts/New for 11.3",
+    "mkdocs BAK 2025-03-19.yml",
+    "mkdocs - Copy.yml",
     "docs/REST-API Guide/What's New.md",
     "docs/REST-API Guide/Key fields and time formats.md",
-    "docs/REST-API Guide/Examples.md",
-    "docs/REST-API Guide/Query Parameters and Filters.md",
     "docs/REST-API Guide/Custom field handling.md",
     "docs/REST-API Guide/Save Arguments.md",
-    "docs/REST-API Guide/Upsert.md",
-    "docs/REST-API Guide/Fundamentals and data model.md",
-    "docs/REST-API Guide/Methods and response codes.md",
     "docs/index.md",
     "docs/assets/Pasted image 20250208163000.png",
     "docs/Webhooks Guide/index.md",
@@ -181,31 +196,20 @@
     "docs/Webhooks Guide/assets/Pasted image 20250208155031.png",
     "docs/Webhooks Guide/assets/Pasted image 20250208153334.png",
     "docs/REST-API Guide/index.md",
-    "docs/assets/XLogo.png",
-    "docs/assets/X Logo.png",
     "docs/REST-API Guide/Known Issues.md",
     "docs/REST-API Guide/Performance Recommendations.md",
     "docs/drafts/xNewforV11-1/Webhooks New for v11.2.md",
     "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
     "docs/drafts/xNewforV11-1/validateQueryParameters.md",
-    "docs/Webhooks Guide/What's New.md",
     "docs/Webhooks Guide/Export Adaptor.md",
     "docs/drafts/xNewforV11-1/REST API New in V11.1.md",
-    "docs/REST-API Guide/OpenAPI definition.md",
     "docs/Webhooks Guide/Outbound Connection.md",
-    "docs/REST-API Guide/Connecting and Authenticating.md",
-    "docs/REST-API Guide/Deprecation of REST API v1.md",
-    "README.md",
     "docs/Webhooks Guide/assets",
     "docs/Webhooks Guide",
     "docs/stylesheets/Webhooks Guide/assets",
     "docs/stylesheets/Webhooks Guide",
     "docs/Auth Providers/assets",
     "docs/Auth Providers",
-    "docs/x Zendesk Articles/Webhooks User Guide – Xytech Systems",
-    "docs/x Zendesk Articles/Media Operations Platform REST API Reference - 10.6 – Xytech Systems",
-    "docs/x Zendesk Articles",
-    "docs/REST-API Guide/Test Canvas.canvas",
-    "docs/REST-API Guide/Tuning and Maintenance"
+    "docs/REST-API Guide/Test Canvas.canvas"
   ]
 }
