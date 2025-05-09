@@ -216,15 +216,15 @@ If you do specify a pageSize and do not pass a page, page will default to 1.
   
 **Example:**  
 To return the first 10 records on page 1 sorted by product_no:  
-```
-GET {APIbaseURL}}/JmOrgProductList?query="active":"Y"}&resultColumns="L":"product_no","product_desc"]}&sort="product_no_desc"]&pageSize=10&page=1
+```JSON
+GET {APIbaseURL}/JmOrgProductList?query={"active":"Y"}&resultColumns={"L":["product_no","product_desc"]}&sort=["product_no_desc"]&pageSize=10&page=1
 ```
 
 
 
 **Full example:**  
-```
-{APIbaseURL}/JmJobList?query={"job_no":{"$range":[1,67982]}}&resultcolumns={"L": ["job_no", "job_desc"]}&pageSize=5&page=7&sort=["job_desc desc", "job_no desc"]
+```JSON
+GET {APIbaseURL}/JmJobList?query={"job_no":{"$range":[1,67982]}}&resultcolumns={"L": ["job_no", "job_desc"]}&pageSize=5&page=7&sort=["job_desc desc", "job_no desc"]
 ```
 
 The above example queries for jobs that have job numbers in the range of 1 to  67982, returns job number and job description fields but only the 7th page with 5 jobs sorted first by description (descending) then by job number (descending).
