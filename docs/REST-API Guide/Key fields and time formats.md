@@ -173,7 +173,7 @@ Date time formats used by the REST API follow ISO-8601 standards. `YYYY-MM-DDThh
 Times are stored in the Xytech database as UTC times 
 (the exception being when the Master Time Zone is not set to UTC, which is a legacy option)
 
-As a general the recommendation is to work in UTC times or local times using the Time Zone Header attribute.
+The recommendation is to work in UTC times or local times using the Time Zone Header attribute.
 
 ### POST, PUT and PATCH Examples
 
@@ -197,6 +197,6 @@ This will override any time zone offset supplied.
 Will respond with the offset attribute.
 2025-02-20T10:00:00+00:00
 
-(Note any offset is determined by the app server time zone , normally set to UTC, the time plus offset will be the UTC time)
+(Note any offset is determined by the app server time zone , normally set to UTC, the time plus offset will equate to the UTC time)
 
 

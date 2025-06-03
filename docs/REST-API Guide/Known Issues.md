@@ -61,3 +61,6 @@ For v10.6 the format looked like this:
 ```
 
 This has been corrected from v11.0 onwards.
+
+## Release v11.2 Date Time offset ignored for POST
+An issue existed in v11.2 where any offset value included with the date time when using POST would be ignored. This has been resolved in v11.3

@@ -27,6 +27,6 @@ Export Adaptors define the endpoint(s) for an Outbound Connection. An Export Ada
 URL Parameters can be added to endpoints that include a combination of static text and dynamically populated values from the triggered document. Use the same field naming convention when defining the payload template for an Event Trigger.  
 
 _Examples:_
--   `{base URL}/{endpoint}/external_key=[jm_job.external_key]`
--   `{base URL}/{endpoint}/job_no=[jm_job.job_no]/jm_episode`
+-  Endpoint field: `order/external_key=[jm_job.external_key]`
+-  Endpoint field: `order/job_no=[jm_job.job_no]/jm_episode]`
 
