@@ -148,7 +148,7 @@ Example XML:
 `[lib_title.title_desc_2] = response/catalog/book[@id='bk102']/title`	returns 'Midnight Rain'
 
 
-### To a Text Response
+### Text Response
 Where a text response is configure, the system will store the whole text payload.
 If the response value returned is too big to store in the target field, it will get truncated.
 Any existing values in the database will get overwritten with the new value.
@@ -157,4 +157,10 @@ Example:
 [lib_title.title_desc_2] = response
 
 The prefix of 'response' is mandatory to represent the response payload.
+
+### TIP
+It is important to ensure the data type or the target field matches the parsed field.
+In other words, you will not be able to store a string value into a numeric field.
+Else you will see a response parsing error in the Exp[ort Adaptor Log:
+"System encountered problem with saving Parsed Response into Database"
 
