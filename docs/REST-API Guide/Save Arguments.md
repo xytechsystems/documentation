@@ -6,6 +6,7 @@ In some cases, you must also add a header to trigger the app server to perform a
 
 Below is a list of Save Arguments
 ## LoadTemplate
+### Applicable endpoints: JmWorkOrder, MoMediaOrder, XmTransmissionOrder
 Loads Work Order Template to an order.
 **SaveArgument : {"LoadTemplate":"2"}**
 Where the number represents the number of the template to load.
@@ -35,6 +36,7 @@ curl --location 'http://{APIbaseURL}/JmWorkOrder' \
 ```
 
 ## LoadServiceTemplate
+### Applicable endpoints: MoMediaOrder, XmTransmissionOrder
 Loads a service template to a Media Order or a Transmission Order
 **SaveArgument : {"LoadServiceTemplate":"10"}**
 Where the number represents the Service Template number to load.
@@ -62,6 +64,7 @@ curl --location 'http://{APIbaseURL}/XmTransmissionOrder' \
 ```
 
 ## BidApproval
+### Applicable endpoints: BidVersion
 Changes the bid approval state of a Bid using number that represents the approval type.
 **SaveArgument : {"BidApproval":"0"}**
 
@@ -84,6 +87,7 @@ curl --location --request PATCH 'http://{APIbaseURL}/BidVersion/version_no=211' 
 ```
 
 ## VoidWorkOrder
+### Applicable endpoints: JmWorkOrder, MoMediaOrder, XmTransmissionOrder
 Function to void an Order.
 **SaveArgument: {"VoidWorkOrder":"36914-1"}**
 Where the number represents the Work Order number sequence.
@@ -104,6 +108,7 @@ curl --location --request PATCH 'http://{APIbaseURL}/JmWorkOrder/wo_no_seq=2626-
 ```
 
 ## UnVoidWorkOrder
+### Applicable endpoints: JmWorkOrder, MoMediaOrder, XmTransmissionOrder
 Provides the ability to un-void an Order.
 **SaveArgument: {"UnVoidWorkOrder":"1067982-1"}**
 
@@ -117,6 +122,7 @@ curl --location --request PATCH 'http://{APIbaseURL}/JmWorkOrder/wo_no_seq=10679
 ```
 
 ## GroupCode
+### Applicable endpoints: SchResource
 Function to set the default Group of a scheduling resource.
 The Group must already be assigned to the Resource in the Group list.
 **SaveArgument: {"GroupCode":"UKPS"}**
@@ -130,3 +136,56 @@ curl --location --request PATCH 'http://{APIbaseURL}/SchResource/resource_code=3
 --data ''
 ```
 
+## ActualizeSelected
+### Applicable endpoints: JmActual
+v11.1
+To actualize selected or all transactions.
+This save argument will update the transaction and order phase, effectively posting the actuals.
+**saveArgument: { "ActualizeSelected":"38521,38522", "ActualizeUpdatePhase":"Y"}**
+
+Variations:
+**saveArgument: { "ActualizeAll":"-2", "ActualizeUpdatePhase":"Y"}**
+**SaveArgument:{ "ActualizeSelected":"-2,200003,200004", "ActuallizeUpdatePhase":"Y"}**
+
+Intended to be used in conjunction with the POST of actual actions. This save argument then performs the action of actualization.
+
+Example single transaction actualization without times:
+```json
+curl --location 'http://{APIbaseURL}/JmActual/' \
+--header 'Content-Type: application/json' \
+--header 'SaveArgument: { "ActualizeSelected":"1259520", "ActualizeUpdatePhase":"Y"}' \
+--header 'Authorization: ••••••' \
+--data '{
+    "jm_actual_header": [
+        {
+            "actual_hdr_no": {
+                "actual_hdr_no": -1
+            },
+            "wo_no": 9453,
+            "wo_seq": 1,
+            "wo_no_seq": {
+                "wo_no_seq": "1075881-1"
+            },
+            "actual_status": "Y",
+            "jm_actual_detail": [
+                {
+                    "actual_hdr_no": -1,
+                    "actual_det_no": -2,
+                    "action_code": {
+                        "action_code": "I"
+                    },
+                    "actual_unit": 4,
+                    "actual": "Y"
+                }
+            ],
+            "jm_actual_link": [
+                {
+                    "actual_link_no": -3,
+                    "actual_det_no": -2,
+                    "trx_no": 1259520
+                }
+            ]
+        }
+    ]
+}'
+```
