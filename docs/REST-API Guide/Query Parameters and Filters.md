@@ -217,7 +217,7 @@ If you do specify a pageSize and do not pass a page, page will default to 1.
 **Example:**  
 To return the first 10 records on page 1 sorted by product_no:  
 ```JSON
-GET {APIbaseURL}/JmOrgProductList?query={"active":"Y"}&resultColumns={"L":["product_no","product_desc"]}&sort=["product_no_desc"]&pageSize=10&page=1
+GET {APIbaseURL}/JmOrgProductList?query={"active":"Y"}&resultColumns={"L":["product_no","product_desc"]}&sort=["product_no desc"]&pageSize=10&page=1
 ```
 
 
