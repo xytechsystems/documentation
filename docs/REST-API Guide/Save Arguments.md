@@ -63,6 +63,9 @@ curl --location 'http://{APIbaseURL}/XmTransmissionOrder' \
 }'
 ```
 
+Multiple Service Templates can be loaded by including comma separated values:
+**SaveArgument : {"LoadServiceTemplate":"10","11"}**
+In this scenario you can leave the "service_template_no" in the body as null. 
 ## BidApproval
 ### Applicable endpoints: BidVersion
 Changes the bid approval state of a Bid using number that represents the approval type.

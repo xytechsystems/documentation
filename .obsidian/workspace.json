@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f945be63ab83ac47",
+        "id": "cca8ef439bf19d0c",
         "type": "tabs",
         "children": [
           {
-            "id": "7fdff45628ab4b7e",
+            "id": "233c780f5ea09c1d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,15 +156,17 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "nav-weight:Nav Weight: click to disable": false
     }
   },
-  "active": "7fdff45628ab4b7e",
+  "active": "233c780f5ea09c1d",
   "lastOpenFiles": [
-    "docs/REST-API Guide/Query Parameters and Filters.md",
     "docs/REST-API Guide/Save Arguments.md",
-    "docs/drafts/What's new/11.4 REST API What's new.md",
+    "docs/Webhooks Guide/index.md",
     "docs/drafts/What's new/11.3 What's new webhooks.md",
+    "docs/REST-API Guide/Query Parameters and Filters.md",
+    "docs/drafts/What's new/11.4 REST API What's new.md",
     "docs/drafts/What's new/11.3 What's new REST API.md",
     "docs/Webhooks Guide/Event Trigger.md",
     "docs/Webhooks Guide/Tips and Troubleshooting.md",
@@ -189,7 +191,6 @@
     "docs/REST-API Guide/Custom field handling.md",
     "docs/index.md",
     "docs/assets/Pasted image 20250208163000.png",
-    "docs/Webhooks Guide/index.md",
     "docs/assets/xLogo.png",
     "docs/assets/xL.png",
     "docs/assets/x Logo.png",
