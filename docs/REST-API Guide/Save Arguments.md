@@ -5,7 +5,7 @@ weight: 24
 In some cases, you must also add a header to trigger the app server to perform a function as part of an API call. For example, when creating a Work Order, to load a Work Order Template you must provide the SaveArgument parameter as well as including the wo_template_no value in the payload.
 
 Below is a list of Save Arguments
-## LoadTemplate
+## Load a Template to an order
 ### Applicable endpoints: JmWorkOrder, MoMediaOrder, XmTransmissionOrder
 Loads Work Order Template to an order.
 **SaveArgument : {"LoadTemplate":"2"}**
@@ -35,7 +35,7 @@ curl --location 'http://{APIbaseURL}/JmWorkOrder' \
 }'
 ```
 
-## LoadServiceTemplate
+## Load a Service Template to an order
 ### Applicable endpoints: MoMediaOrder, XmTransmissionOrder
 Loads a service template to a Media Order or a Transmission Order
 **SaveArgument : {"LoadServiceTemplate":"10"}**
@@ -66,7 +66,7 @@ curl --location 'http://{APIbaseURL}/XmTransmissionOrder' \
 Multiple Service Templates can be loaded by including comma separated values:
 **SaveArgument : {"LoadServiceTemplate":"10","11"}**
 In this scenario you can leave the "service_template_no" in the body as null. 
-## BidApproval
+## Approve a Bid
 ### Applicable endpoints: BidVersion
 Changes the bid approval state of a Bid using number that represents the approval type.
 **SaveArgument : {"BidApproval":"0"}**
@@ -89,7 +89,7 @@ curl --location --request PATCH 'http://{APIbaseURL}/BidVersion/version_no=211' 
 ]'
 ```
 
-## VoidWorkOrder
+## Void a Work Order
 ### Applicable endpoints: JmWorkOrder, MoMediaOrder, XmTransmissionOrder
 Function to void an Order.
 **SaveArgument: {"VoidWorkOrder":"36914-1"}**
@@ -110,7 +110,7 @@ curl --location --request PATCH 'http://{APIbaseURL}/JmWorkOrder/wo_no_seq=2626-
 ]'
 ```
 
-## UnVoidWorkOrder
+## Un-Void a Work Order
 ### Applicable endpoints: JmWorkOrder, MoMediaOrder, XmTransmissionOrder
 Provides the ability to un-void an Order.
 **SaveArgument: {"UnVoidWorkOrder":"1067982-1"}**
@@ -124,7 +124,7 @@ curl --location --request PATCH 'http://{APIbaseURL}/JmWorkOrder/wo_no_seq=10679
 --data ''
 ```
 
-## GroupCode
+## Set the default Group of a Scheduling Resource
 ### Applicable endpoints: SchResource
 Function to set the default Group of a scheduling resource.
 The Group must already be assigned to the Resource in the Group list.
@@ -139,7 +139,7 @@ curl --location --request PATCH 'http://{APIbaseURL}/SchResource/resource_code=3
 --data ''
 ```
 
-## ActualizeSelected
+## Actualise Work Order actuals
 ### Applicable endpoints: JmActual
 v11.1
 To actualize selected or all transactions.
