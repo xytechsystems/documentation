@@ -192,3 +192,27 @@ curl --location 'http://{APIbaseURL}/JmActual/' \
     ]
 }'
 ```
+
+## Post Time Card Batch
+### Applicable endpoint: TcBatch
+v11.1
+Replicates the action UI menu item to 'Post' the batch. 
+
+Example PATCH payload:
+```JSON
+curl --location --request PATCH '/TcBatch/batch_no=7572' \
+--header 'Content-Type: application/json-patch+json' \
+--header 'saveArgument: {"Post":""}' \
+--header 'Authorization: Basic aHR0cDovL2RldndjdW1wYXBwMjoxMTAwMC9hcGkvdjIvZGF0YWJhc2UvWFlUX01BSU5fVjp4eXRlY2hwdw==' \
+--data '{
+    "tc_batch": [
+        {
+            "batch_no": {
+                "batch_no": "7572"
+            }
+        }
+    ]
+}'
+```
+
+
