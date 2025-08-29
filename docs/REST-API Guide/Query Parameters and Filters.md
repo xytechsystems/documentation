@@ -355,7 +355,8 @@ e.g.
 Division-Code : GS
 
 In postman:
-![](assets/Pasted%20image%2020250116134014.png)
+![|500](assets/Pasted%20image%2020250829103605.png)
+
 This capability replicates the functionality when a user accesses the webapp with their default division,  who will see data filtered by their default Division.
 
 Applicable only to sites that use the Division feature.
