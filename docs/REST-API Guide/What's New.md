@@ -17,7 +17,7 @@ Resolves an issue when creating a Media Order or Transmission Order via the REST
 ## <font color="#c00000">v11.1</font>
 
 ## Division
-REST API GET calls now support the ability to pass the Division as an override to the API API user's default Division. 
+REST API calls now support the ability to pass the Division as an override to the API API user's default Division. 
 
 A new optional header called "Division-Code" exists where you can now include the Division code. This will ensure the correct results are returned for the API users current Division.
 The API user account must have user access to the division to be able to successfully pass it in the API call. If not, you will receive an error message. 

@@ -93,7 +93,7 @@ Below the name of each data object is the REST API endpoint used for accessing t
 
 -   REST API v1 was the first Xytech REST API product. It had limitations that required breaking changes to improve so v2 was made available from Xytech v9.4 release with improved functionality.
 -   REST API v1 will no longer be supported in version 11.0 and beyond.
--   All new integrations should use v2 API and existing integrations should port to v2
+-   All new integrations should use v2 API and existing integrations should port to v2 as soon as possible
 -   To use v2 API, change the base URL version number from ../v1/.. to ../v2/..
 
 #### **Additional Features in v2 API (as of Platform v10.2 release)**

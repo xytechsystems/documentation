@@ -7,9 +7,7 @@ REST API v1 was the first Xytech REST API product. It had limitations that requi
 
 REST API v1 is no longer supported in version 11.0 and beyond.  
 
-REST API v1 will no longer work from v11.1  
-
-All new integrations should use API v2 and existing integrations should port to v2.  
+All new integrations should use API v2 and existing integrations should port to v2 as soon as possible.  
 
 To use v2 API, change the base URL version number from ../v1/.. to ../v2/..
 

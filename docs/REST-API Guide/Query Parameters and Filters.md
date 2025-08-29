@@ -36,29 +36,29 @@ To return items that match a specified string. The string can either be letters 
 ### Range
 To return items that fall between a specified minimum and maximum numeric value.
 
-| Description | Parameter values                                                                                                                                                                   |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Syntax      | query="field":{"$range":[lower_limit, upper_limit]}                                                                                                                                |
-| Examples    | query={"job_no":{"$range":[100, 199]}}<br>query={"wo_begin_dt":{"$range":"2023-12-01","2023-12-31"}}  <br>query={"wo_begin_dt":{"$range":"2023-06-01T09:00","2023-06-01T17:00"}} |
-|             |                                                                                                                                                                                    |
+| Description | Parameter values                                                                                                                                                                                                   |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Syntax      | <br>```<br>query="field":{"$range":[lower_limit, upper_limit]}<br>```<br>                                                                                                                                          |
+| Examples    | <br>```<br>query={"job_no":{"$range":[100, 199]}}<br>query={"wo_begin_dt":{"$range":["2023-12-01","2023-12-31"]}}  <br>query={"wo_begin_dt":{"$range":["2023-06-01T09:00","2023-06-01T17:00"]}}<br>```<br><br><br> |
+|             |                                                                                                                                                                                                                    |
 
 ### In
 To return items that match one of the values provided in a given set of values.
 See section below on wildcards [Searching for multiple wildcard values](Query%20Parameters%20and%20Filters.md#Searching%20for%20multiple%20wildcard%20values)
 
-| Description | Parameter values                                           |
-| ----------- | ---------------------------------------------------------- |
-| Syntax      | query={“field”:{"$in":[“value_1”,”value_2”, … ”value_n”]}} |
-| Examples    | query={“job_no”:{"$in":[100, 105, 110, 119]}}              |
+| Description | Parameter values                                             |
+| ----------- | ------------------------------------------------------------ |
+| Syntax      | `query={“field”:{"$in":[“value_1”,”value_2”, … ”value_n”]}}` |
+| Examples    | `query={“job_no”:{"$in":[100, 105, 110, 119]}}`              |
 
 ### Null (empty)
 To return items that have NULL values. 
 Note: Put pipe characters around NULL to differentiate it from the literal string “NULL”.
 
-| Description | Parameter Values                    |
-| ----------- | ----------------------------------- |
-| Syntax      | query={"field”: “\|NULL\|”}         |
-| Examples    | query={“phone_number”:{"\|NULL\|"}} |
+| Description | Parameter Values                  |
+| ----------- | --------------------------------- |
+| Syntax      | query={"field”: “\|NULL\|”}       |
+| Examples    | query={“phone_number”:"\|NULL\|"} |
 
 ### NE (not equal)
 To return items that do not match the specified number, string, or NULL.
@@ -345,9 +345,10 @@ See link for list of [Windows Time Zones](https://learn.microsoft.com/en-us/wind
 
 ## Division 
 (11.1)
-REST API GET calls support the ability to pass the Division as an override to the API API user's default Division. 
+REST API calls support the ability to pass the Division as an override to the API API user's default Division. 
 
 An optional header called "Division-Code" exists where you can include the Division code. This will ensure the correct results are returned for the API users when using Divisions.
+
 The API user account must have been given user access to the division to be able to successfully pass it in the API call. If not, you will receive an error message. 
 
 e.g.
@@ -355,3 +356,6 @@ Division-Code : GS
 
 In postman:
 ![](assets/Pasted%20image%2020250116134014.png)
+This capability replicates the functionality when a user accesses the webapp with their default division,  who will see data filtered by their default Division.
+
+Applicable only to sites that use the Division feature.
