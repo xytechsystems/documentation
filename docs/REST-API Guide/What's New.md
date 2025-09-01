@@ -52,7 +52,8 @@ SaveArgument: {"LoadTemplate":"1012","LoadChildTemplates":"Y"}
 (25746)
 ## Ability to enable custom drop-down fields to return additional attributes
 Users can now enable **custom dropdown fields** (through a new document customisation flag 'Additional API details', so that when called by the REST API will return the additional attributes stored with the dropdown record such as external_key.
-
+Document Customisation Fields:
+![](assets/Pasted%20image%2020250328121552.png)
 Example of a custom drop-down field when 'Additional API details' is <u>not</u> enabled:
 ![|334](assets/Pasted%20image%2020250820122610.png)
 Example of a custom drop-down field when 'Additional API details' <u>is</u> enabled:
