@@ -2,7 +2,7 @@
 title: What's New
 weight: 2
 ---
-## <font color="#c00000">v11.3</font3>
+## <font color="#c00000">v11.3</font>
 
 ## Ability to disable Export Adaptors or Outbound Connections
 The webhooks feature now has the ability to deactivate Export Adaptors or Outbound Connections. This can be very useful especially when restoring a backup onto a test or development instance to prevent accidental outbound integrations from happening to production external services.
