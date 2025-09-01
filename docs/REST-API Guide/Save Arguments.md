@@ -8,12 +8,18 @@ Below is a list of Save Arguments
 ## Load a Template to an order
 ### Applicable endpoints: JmWorkOrder, MoMediaOrder, XmTransmissionOrder
 Loads Work Order Template to an order.
-**SaveArgument : {"LoadTemplate":"2"}**
+```
+SaveArgument : {"LoadTemplate":"2"}
+```
 Where the number represents the number of the template to load.
+
+To load child templates (available from release 11.3), add an additional parameter called 'LoadChildTemplates'
+```
+SaveArgument: {"LoadTemplate":"1012","LoadChildTemplates":"Y"}
+```
 
 Example when creating an order using a POST call. The template number must be provided in both the header and the payload.
 
-NOTE: currently (up to v11.0, LoadTemplate has a limitation in that it will not load additional child templates assigned to resources. In the webapp UI, the user is prompted whether they wish to include child templates when loading the primary template)
 ```json
 curl --location 'http://{APIbaseURL}/JmWorkOrder' \
 --header 'Content-Type: application/json' \

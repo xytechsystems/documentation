@@ -2,6 +2,73 @@
 title: What's New
 weight: 2
 ---
+## <font color="#c00000">v11.3</font>
+
+## OAuth 2.0 OpenID Authentication for REST API
+Two methods are supported
+- Client Credentials method (system to system access)
+- SPA / browser sign-in method (interactive user authentication flow)
+
+Pre-requisites
+Your auth provider has been configured and the Xytech app server has been configured. (Azure and Okta/Auth0)
+ 
+Client-Credentials method, from auth provider you needs:
+- Access token URL
+- Client ID
+- Client Secret
+- Scope
+
+For SPA method you nee:
+- Authorisation URL
+- Access token URL
+- Client ID
+- Client Secret
+- Scope
+
+Summary flow:
+Obtain token from auth provider
+Use token to make REST API calls until token expires.
+
+## JWT Token authentication
+For use case scenarios where database user accounts are employed.
+Typical use might be for system to system authentication requirements.
+
+Pre-requisite
+Xytech app server has been configured for JWT authentication
+
+Summary flow:
+Retrieve token passing login credentials in the POST body
+Use token for all subsequent API calls, until token expires
+
+See additional authentication user guides for more details.
+
+## Child templates of Work Order Templates are now loaded.
+When creating or updating an order you can load a work order template along with any child templates associated. This has been accomplished by adding an additional optional parameter to the existing Save Argument called 'LoadChildTemplates'
+
+e.g. header: 
+```
+SaveArgument: {"LoadTemplate":"1012","LoadChildTemplates":"Y"}
+```
+(25746)
+## Ability to enable custom drop-down fields to return additional attributes
+Users can now enable **custom dropdown fields** (through a new document customisation flag 'Additional API details', so that when called by the REST API will return the additional attributes stored with the dropdown record such as external_key.
+
+Example of a custom drop-down field when 'Additional API details' is <u>not</u> enabled:
+![|334](assets/Pasted%20image%2020250820122610.png)
+Example of a custom drop-down field when 'Additional API details' <u>is</u> enabled:
+![|332](assets/Pasted%20image%2020250820122824.png)
+(28200)
+
+## Fixes 
+For a full list, refer to the [11.3 release notes](https://helpcenter.fabricdata.com/hc/en-us/articles/35383589106459-Xytech-2025-Release-Release-Log-11-3). 
+## Response status codes in Swagger documentation now reflect the correct values for the 2xx range.
+Resolves an issue where the OpenAPI (Swagger) documentation for certain REST API endpoints did not accurately reflect the actual HTTP response value, such as the 200 Ok response calling the POST method for the /JmJob endpoint (previously 204).
+(26278)
+## POST datetime fields ignore offset attribute
+Resolves a REST API issue when using POST,  datetime offset attributes on date times values were being ignored. Date formats can include the time offset e.g. "2024-12-05T04:00:00-08:00"
+(27932)
+
+
 ## <font color="#c00000">v11.2</font>
 Fixes
 ## JmWoTransaction
