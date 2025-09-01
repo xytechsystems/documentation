@@ -2,6 +2,107 @@
 title: What's New
 weight: 2
 ---
+## <font color="#c00000">v11.3</font3>
+
+## Ability to disable Export Adaptors or Outbound Connections
+The webhooks feature now has the ability to deactivate Export Adaptors or Outbound Connections. This can be very useful especially when restoring a backup onto a test or development instance to prevent accidental outbound integrations from happening to production external services.
+(26565)
+## ISO Datetime formats
+Export Adaptors now includes an optional flag to send all dates in ISO standard format.
+(27017)
+## Ability to include child-table field values
+https://dev.azure.com/xytsystems/Xytech%20Platform/_workitems/edit/24750
+Export adaptor payloads can include an array of values from child tables.
+The syntax requires the array fields to be nested under child table tags using specific syntax as shown in the example below. 
+
+```
+#[<child table name>]
+	<fields>
+#[/<child table name>]
+```
+
+The JSON syntax must be manually managed around these table tags.
+You can drag and drop fields from the child table onto the template text area where the prefix syntax of the table name will be automatically applied.
+
+An example Export Adaptor payload template for a Media Order Event Trigger that includes a list of Services and a list of Operations.
+```json
+{
+  "document": "MoMediaOrder",
+  "id": "[jm_work_order.wo_no_seq]",
+  "idField": "wo_no_seq",
+  "details": [
+		{
+	       "services": [
+			    #[mo_service_row]
+		        {
+		          "description": "[mo_service_row.service_desc]",
+		          "service_row_no": "[mo_service_row.service_row_no]"
+		        }
+			    #[/mo_service_row]
+		        ],
+			"operations": [
+		    	#[mo_operation]
+			     {
+			           "service_row_no": "",
+			           "description": "[mo_operation.trx_resource_code]",
+			           "op_no": "[mo_operation.operation_no]"
+				 }
+				#[/mo_operation]
+				 ]
+		}
+	],
+	"type": "UPDATE"
+}
+```
+Note: Warning, this will make the template non-JSON standard. The template syntax will be validated as Xytech compliant on save.
+
+Example payload generated:
+```json
+{
+  "document": "MoMediaOrder",
+  "id": "109483-1",
+  "idField": "wo_no_seq",
+  "details": [
+    {
+       "services": [
+               {
+          "description": "Color Program/Review - Per Hr",
+          "service_row_no": "50094"
+        },
+              {
+          "description": "Color Program/Review - Per Hr",
+          "service_row_no": "50095"
+        },
+              {
+          "description": "142 Digital Receipt",
+          "service_row_no": "229496"
+        }
+      
+        ],
+      "operations": [
+                {
+          "service_row_no": "",
+          "description": "",
+          "op_no": "71032"
+        },
+                {
+          "service_row_no": "",
+          "description": "",
+          "op_no": "71033"
+        }
+        
+      ]
+    }
+
+  ],
+  "type": "UPDATE"
+}
+
+```
+
+Please note that the tables cannot be nested within each other, only one level of sub-tables is supported. No restrictions on which table is used to setup the trigger conditions as the code is document based. In other words, if your document is Media Order, you could use any sub table in the trigger conditions and all the available sub tables could be used in the template.
+(24750)
+
 ## <font color="#c00000">v11.1</font>
 ## Export Adaptor custom headers override default
 You are now able to add a custom header of 'Content-Type' to an Export Adaptor that will override the default generated Content-Type header. Note: you must flag the custom header as a Content Header.
