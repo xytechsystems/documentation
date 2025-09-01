@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "cca8ef439bf19d0c",
+        "id": "1d621c26ef6e06ba",
         "type": "tabs",
         "children": [
           {
-            "id": "233c780f5ea09c1d",
+            "id": "f7aa8c3a2f58f51e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/drafts/What's new/11.3 What's new REST API.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "11.3 What's new REST API"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "division",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/drafts/What's new/11.3 What's new REST API.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 11.3 What's new REST API"
             }
           }
         ],
@@ -151,57 +156,58 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "webpage-html-export:Export as HTML": false,
       "nav-weight:Nav Weight: click to disable": false
     }
   },
-  "active": "233c780f5ea09c1d",
+  "active": "f7aa8c3a2f58f51e",
   "lastOpenFiles": [
-    "docs/REST-API Guide/Save Arguments.md",
-    "docs/Webhooks Guide/index.md",
     "docs/drafts/What's new/11.3 What's new webhooks.md",
-    "docs/REST-API Guide/Query Parameters and Filters.md",
-    "docs/drafts/What's new/11.4 REST API What's new.md",
     "docs/drafts/What's new/11.3 What's new REST API.md",
+    "docs/REST-API Guide/Query Parameters and Filters.md",
+    "docs/REST-API Guide/assets/Pasted image 20250829103605.png",
+    "docs/REST-API Guide/assets/Pasted image 20250829103542.png",
+    "docs/REST-API Guide/Fundamentals and data model.md",
+    "docs/REST-API Guide/What's New.md",
+    "docs/REST-API Guide/Deprecation of REST API v1.md",
+    "docs/drafts/What's new/11.4 REST API What's new.md",
+    "docs/REST-API Guide/Connecting and Authenticating.md",
+    "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
+    "docs/drafts/What's new/assets/Pasted image 20250820122824.png",
+    "docs/drafts/What's new/assets/Pasted image 20250820122610.png",
+    "docs/drafts/ScheduALL changes since v5.44.md",
+    "docs/REST-API Guide/Save Arguments.md",
+    "docs/Auth Providers/OpenID Configuration User Guide.md",
+    "docs/drafts/What's new/11.4 What's New Webhooks.md",
+    "docs/Webhooks Guide/index.md",
     "docs/Webhooks Guide/Event Trigger.md",
     "docs/Webhooks Guide/Tips and Troubleshooting.md",
-    "docs/REST-API Guide/What's New.md",
     "docs/REST-API Guide/Known Issues.md",
     "docs/REST-API Guide/Key fields and time formats.md",
     "docs/Webhooks Guide/Export Adaptor.md",
-    "docs/REST-API Guide/Deprecation of REST API v1.md",
     "docs/REST-API Guide/Methods and response codes.md",
     "docs/REST-API Guide/Examples.md",
-    "docs/REST-API Guide/Fundamentals and data model.md",
     "docs/REST-API Guide/OpenAPI definition.md",
     "docs/REST-API Guide/Upsert.md",
     "docs/drafts/What's new/assets/Pasted image 20250328133059.png",
     "docs/drafts/What's new/assets/Pasted image 20250328121552.png",
     "docs/drafts/What's new/assets",
     "docs/Webhooks Guide/What's New.md",
-    "docs/Auth Providers/OpenID Configuration User Guide.md",
     "docs/drafts/What's new",
     "mkdocs BAK 2025-03-19.yml",
     "mkdocs - Copy.yml",
     "docs/REST-API Guide/Custom field handling.md",
-    "docs/index.md",
     "docs/assets/Pasted image 20250208163000.png",
     "docs/assets/xLogo.png",
     "docs/assets/xL.png",
     "docs/assets/x Logo.png",
-    "docs/Webhooks Guide/assets/Pasted image 20250208155704.png",
-    "docs/Webhooks Guide/assets/Pasted image 20250208155129.png",
-    "docs/Webhooks Guide/assets/Pasted image 20250208155031.png",
-    "docs/Webhooks Guide/assets/Pasted image 20250208153334.png",
-    "docs/REST-API Guide/index.md",
-    "docs/REST-API Guide/Performance Recommendations.md",
-    "docs/drafts/xNewforV11-1/Webhooks New for v11.2.md",
-    "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
     "docs/Webhooks Guide/assets",
     "docs/Webhooks Guide",
     "docs/stylesheets/Webhooks Guide/assets",
