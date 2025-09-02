@@ -58,6 +58,7 @@ Document Customisation fields showing additional checkbox:
 
 Example of a custom drop-down field when 'Additional API details' is <u>not</u> enabled:
 ![|334](assets/Pasted%20image%2020250820122610.png)
+
 Example of a custom drop-down field when 'Additional API details' <u>is</u> enabled:
 ![|332](assets/Pasted%20image%2020250820122824.png)
 (28200)
