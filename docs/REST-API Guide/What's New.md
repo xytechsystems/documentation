@@ -61,6 +61,7 @@ Example of a custom drop-down field when 'Additional API details' is <u>not</u> 
 
 Example of a custom drop-down field when 'Additional API details' <u>is</u> enabled:
 ![|332](assets/Pasted%20image%2020250820122824.png)
+
 (28200)
 
 ## Fixes 
