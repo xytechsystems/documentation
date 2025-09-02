@@ -54,7 +54,7 @@ An example Export Adaptor payload template for a Media Order Event Trigger that 
 	"type": "UPDATE"
 }
 ```
-Note: Warning, this will make the template non-JSON standard. The template syntax will be validated as Xytech compliant on save.
+Note: This will make the template non-JSON standard. The template syntax will be validated as Xytech compliant on save.
 
 Example payload generated:
 ```json
