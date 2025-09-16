@@ -3,6 +3,12 @@ title: Save Arguments
 weight: 24
 ---
 In some cases, you must also add a header to trigger the app server to perform a function as part of an API call. For example, when creating a Work Order, to load a Work Order Template you must provide the SaveArgument parameter as well as including the wo_template_no value in the payload.
+#### Multiple Save Arguments
+Where applicable, multiple save arguments can be used as an array separated by a comma. Example:
+```
+SaveArgument : {"LoadServiceTemplate":"10","11"},{"LoadTemplate":"2"}
+```
+
 
 Below is a list of Save Arguments
 
