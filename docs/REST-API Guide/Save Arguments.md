@@ -3,12 +3,6 @@ title: Save Arguments
 weight: 24
 ---
 In some cases, you must also add a header to trigger the app server to perform a function as part of an API call. For example, when creating a Work Order, to load a Work Order Template you must provide the SaveArgument parameter as well as including the wo_template_no value in the payload.
-#### Multiple Save Arguments
-Where applicable, multiple save arguments can be used as an array separated by a comma. Example:
-```
-SaveArgument : {"LoadServiceTemplate":"10","11"},{"LoadTemplate":"2"}
-```
-
 
 Below is a list of Save Arguments
 
@@ -48,12 +42,21 @@ curl --location 'http://{APIbaseURL}/JmWorkOrder' \
 }'
 ```
 
-Multiple Service Templates can be loaded by including comma separated values:
+## Load a Service Template
+For transmission orders, you can load a Service Template
+```
+SaveArgument : {"LoadServiceTemplate":"10"}
+```
 
+And populate the XmTransmissionOrder payload with service_template_no value
+```JSON
+"service_template_no":10
+```
+
+Multiple Service Templates can be loaded by including comma separated values:
 ```
 SaveArgument : {"LoadServiceTemplate":"10","11"}
 ```
-
 In this scenario you can leave the "service_template_no" in the body as null. 
 
 ## Approve a Bid
@@ -229,3 +232,8 @@ curl --location --request PATCH '/TcBatch/batch_no=7572' \
 ```
 
 
+## Multiple Save Arguments
+Where applicable, multiple save arguments can be used as an array separated by a comma. Example:
+```
+SaveArgument : {"LoadServiceTemplate":"10","LoadTemplate":"2"}
+```
