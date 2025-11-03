@@ -237,3 +237,5 @@ Where applicable, multiple save arguments can be used as an array separated by a
 ```
 SaveArgument : {"LoadServiceTemplate":"10","LoadTemplate":"2"}
 ```
+
+Note: currently you are not able to send multiple save arguments when using LoadServiceTemplate containing multiple values.
