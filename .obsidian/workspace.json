@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6d3a73f008b69aa5",
+        "id": "ec29882ff1a54277",
         "type": "tabs",
         "children": [
           {
-            "id": "3116b03804acfde6",
+            "id": "784ae285dab331a9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/REST-API Guide/What's New.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "What's New"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 539.5
+    "width": 342.5
   },
   "right": {
     "id": "45b0be3785a0217f",
@@ -134,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/REST-API Guide/What's New.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of What's New"
             }
           }
         ],
@@ -158,44 +163,47 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export as HTML": false,
       "nav-weight:Nav Weight: click to disable": false
     }
   },
-  "active": "3116b03804acfde6",
+  "active": "784ae285dab331a9",
   "lastOpenFiles": [
+    "docs/REST-API Guide/Using Postman and cURL.md",
+    "docs/REST-API Guide/Examples.md",
+    "docs/REST-API Guide/Connecting and Authenticating.md",
+    "docs/REST-API Guide/Deprecation of REST API v1.md",
+    "docs/REST-API Guide/Save Arguments.md",
+    "docs/Webhooks Guide/Event Trigger.md",
+    "docs/Webhooks Guide/Export Adaptor.md",
+    "docs/REST-API Guide/Performance Recommendations.md",
+    "docs/auth-providers/README.md",
+    "docs/README.md",
+    "docs/drafts/xZendeskArticles/README.md",
+    "docs/drafts/xNewforV11-1/README.md",
+    "docs/webhooks-guide/README.md",
+    "docs/webhooks-guide",
+    "docs/rest-api-guide/README.md",
+    "docs/rest-api-guide",
+    "docs/drafts/xzendeskarticles/README.md",
+    "docs/drafts/xnewforv11-1/README.md",
+    "docs/drafts/whats-new/README.md",
+    "docs/drafts/whats-new",
+    "docs/drafts/README.md",
+    "docs/auth-providers",
+    "docs/SUMMARY.md",
+    "docs/REST-API Guide/What's New.md",
+    "docs/REST-API Guide/Known Issues.md",
     "docs/REST-API Guide/Custom field handling.md",
     "docs/REST-API Guide/OpenAPI definition.md",
-    "docs/REST-API Guide/Using Postman and cURL.md",
     "docs/REST-API Guide/Fundamentals and data model.md",
-    "docs/REST-API Guide/Examples.md",
     "docs/REST-API Guide/Methods and response codes.md",
-    "docs/REST-API Guide/Connecting and Authenticating.md",
     "docs/drafts/ScheduALL changes since v5.44.md",
-    "docs/REST-API Guide/What's New.md",
-    "docs/Webhooks Guide/What's New.md",
-    "docs/REST-API Guide/Save Arguments.md",
     "docs/REST-API Guide/assets/Pasted image 20250829103605.png",
     "docs/REST-API Guide/assets/Pasted image 20250829103542.png",
     "docs/REST-API Guide/assets/Pasted image 20250820122824.png",
     "docs/REST-API Guide/assets/Pasted image 20250820122610.png",
     "docs/REST-API Guide/assets/Pasted image 20250328133059.png",
     "docs/REST-API Guide/assets/Pasted image 20250328121552.png",
-    "docs/drafts/What's new/11.3 What's new webhooks.md",
-    "docs/drafts/What's new/11.3 What's new REST API.md",
-    "docs/REST-API Guide/Query Parameters and Filters.md",
-    "docs/REST-API Guide/Deprecation of REST API v1.md",
-    "docs/drafts/What's new/11.4 REST API What's new.md",
-    "docs/drafts/xNewforV11-1/What's new - undocumented v11.1.md",
-    "docs/Auth Providers/OpenID Configuration User Guide.md",
-    "docs/drafts/What's new/11.4 What's New Webhooks.md",
-    "docs/Webhooks Guide/index.md",
-    "docs/Webhooks Guide/Event Trigger.md",
-    "docs/Webhooks Guide/Tips and Troubleshooting.md",
-    "docs/REST-API Guide/Known Issues.md",
-    "docs/REST-API Guide/Key fields and time formats.md",
-    "docs/Webhooks Guide/Export Adaptor.md",
-    "docs/REST-API Guide/Upsert.md",
     "docs/drafts/What's new/assets",
     "docs/drafts/What's new",
     "mkdocs BAK 2025-03-19.yml",
@@ -206,10 +214,6 @@
     "docs/assets/x Logo.png",
     "docs/Webhooks Guide/assets",
     "docs/Webhooks Guide",
-    "docs/stylesheets/Webhooks Guide/assets",
-    "docs/stylesheets/Webhooks Guide",
-    "docs/Auth Providers/assets",
-    "docs/Auth Providers",
     "docs/REST-API Guide/Test Canvas.canvas"
   ]
 }
