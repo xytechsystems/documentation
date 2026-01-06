@@ -1,0 +1,2140 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://xytechsystems.github.io/documentation/REST-API%20Guide/What%27s%20New/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../Deprecation%20of%20REST%20API%20v1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>What's New - Xytech API Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="xytech" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#v113" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Xytech API Documentation" class="md-header__button md-logo" aria-label="Xytech API Documentation" data-md-component="logo">
+      
+  <img src="../../assets/xLogo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xytech API Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              What's New
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="xytech" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  REST API Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Webhooks%20Guide/" class="md-tabs__link">
+          
+  
+  
+  Webhooks Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Xytech API Documentation" class="md-nav__button md-logo" aria-label="Xytech API Documentation" data-md-component="logo">
+      
+  <img src="../../assets/xLogo.png" alt="logo">
+
+    </a>
+    Xytech API Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    REST API Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v11.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oauth-20-openid-authentication-for-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OAuth 2.0 OpenID Authentication for REST API
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jwt-token-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JWT Token authentication
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#child-templates-of-work-order-templates-are-now-loaded" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Child templates of Work Order Templates are now loaded.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ability-to-enable-custom-drop-down-fields-to-return-additional-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ability to enable custom drop-down fields to return additional attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-status-codes-in-swagger-documentation-now-reflect-the-correct-values-for-the-2xx-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response status codes in Swagger documentation now reflect the correct values for the 2xx range.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-datetime-fields-ignore-offset-attribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        POST datetime fields ignore offset attribute
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v11.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jmwotransaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JmWoTransaction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-pagination-count-incorrect-value-for-pages-after-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Pagination Count incorrect value for pages after 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-loading-service-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Loading Service Templates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v11.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#division" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Division
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-body-on-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response body on creation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attachment-file-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attachment File Upload
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syscontactfacade-ability-to-create-user-and-vendor-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SysContactFacade ability to create User and Vendor profiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional query parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional query parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notin-not-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NOTIN (Not in)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#likeand-like-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LIKEAND (Like and)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swaggeropenapi-definition-now-downloadable-as-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Swagger/OpenAPI definition now downloadable as JSON
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-child-titles-to-parent-in-single-api-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link child titles to parent in single API call
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#there-are-differences-in-the-way-swagger-reports-a-payload-definition-between-post-get-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        There are differences in the way Swagger reports a payload definition between POST &amp; GET calls.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v110" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v11.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upsert-is-now-supported-via-the-put-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        'upsert' is now supported via the PUT method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compression-is-now-supported" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compression is now supported
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greater-than-and-less-than-new-query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Greater than and less than new query parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ability-to-use-resultcolumns-for-defining-sub-table-fields-to-return-on-maintenance-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ability to use resultColumns for defining sub-table fields to return on maintenance docs.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corrected-null-date-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Corrected null date values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syscontactfacade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SysContactFacade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v106" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v10.6
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Deprecation%20of%20REST%20API%20v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deprecation of REST API v1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Connecting%20and%20Authenticating/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connecting and Authenticating
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Methods%20and%20response%20codes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods and Response Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Using%20Postman%20and%20cURL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Postman and cURL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fundamentals%20and%20data%20model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentals and data model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenAPI%20definition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAPI Definition and Endpoints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Key%20fields%20and%20time%20formats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Fields and Time Formats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Custom%20field%20handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Field Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Query%20Parameters%20and%20Filters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working with Query Parameters and Filters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Save%20Arguments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save Arguments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upsert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upsert / PUT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Performance%20Recommendations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance Recommendations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Known%20Issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webhooks Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Webhooks Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webhooks Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/What%27s%20New/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Outbound%20Connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outbound Connection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Export%20Adaptor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Adaptor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Event%20Trigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Event Trigger
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Export%20Adaptor%20Logs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Adaptor Logs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Tips%20and%20Troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips and Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v11.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oauth-20-openid-authentication-for-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OAuth 2.0 OpenID Authentication for REST API
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jwt-token-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JWT Token authentication
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#child-templates-of-work-order-templates-are-now-loaded" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Child templates of Work Order Templates are now loaded.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ability-to-enable-custom-drop-down-fields-to-return-additional-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ability to enable custom drop-down fields to return additional attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-status-codes-in-swagger-documentation-now-reflect-the-correct-values-for-the-2xx-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response status codes in Swagger documentation now reflect the correct values for the 2xx range.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-datetime-fields-ignore-offset-attribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        POST datetime fields ignore offset attribute
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v11.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jmwotransaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JmWoTransaction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-pagination-count-incorrect-value-for-pages-after-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Pagination Count incorrect value for pages after 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-loading-service-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Loading Service Templates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v11.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#division" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Division
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-body-on-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response body on creation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attachment-file-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attachment File Upload
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syscontactfacade-ability-to-create-user-and-vendor-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SysContactFacade ability to create User and Vendor profiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional query parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional query parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notin-not-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NOTIN (Not in)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#likeand-like-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LIKEAND (Like and)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swaggeropenapi-definition-now-downloadable-as-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Swagger/OpenAPI definition now downloadable as JSON
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-child-titles-to-parent-in-single-api-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link child titles to parent in single API call
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#there-are-differences-in-the-way-swagger-reports-a-payload-definition-between-post-get-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        There are differences in the way Swagger reports a payload definition between POST &amp; GET calls.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v110" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v11.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upsert-is-now-supported-via-the-put-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        'upsert' is now supported via the PUT method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compression-is-now-supported" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compression is now supported
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greater-than-and-less-than-new-query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Greater than and less than new query parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ability-to-use-resultcolumns-for-defining-sub-table-fields-to-return-on-maintenance-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ability to use resultColumns for defining sub-table fields to return on maintenance docs.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corrected-null-date-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Corrected null date values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syscontactfacade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SysContactFacade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v106" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v10.6
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>What's New</h1>
+
+<h2 id="v113"><font color="#c00000">v11.3</font></h2>
+<h2 id="oauth-20-openid-authentication-for-rest-api">OAuth 2.0 OpenID Authentication for REST API</h2>
+<p>Two methods are supported<br>
+- Client Credentials method (system to system access)<br>
+- SPA / browser sign-in method (interactive user authentication flow)</p>
+<p>Pre-requisites<br>
+Your auth provider has been configured and the Xytech app server has been configured. (Azure and Okta/Auth0)</p>
+<p>Client-Credentials method, from auth provider you needs:<br>
+- Access token URL<br>
+- Client ID<br>
+- Client Secret<br>
+- Scope</p>
+<p>For SPA method you nee:<br>
+- Authorisation URL<br>
+- Access token URL<br>
+- Client ID<br>
+- Client Secret<br>
+- Scope</p>
+<p>Summary flow:<br>
+Obtain token from auth provider<br>
+Use token to make REST API calls until token expires.</p>
+<h2 id="jwt-token-authentication">JWT Token authentication</h2>
+<p>For use case scenarios where database user accounts are employed.<br>
+Typical use might be for system to system authentication requirements.</p>
+<p>Pre-requisite<br>
+Xytech app server has been configured for JWT authentication</p>
+<p>Summary flow:<br>
+Retrieve token passing login credentials in the POST body<br>
+Use token for all subsequent API calls, until token expires</p>
+<p>See additional authentication user guides for more details.</p>
+<h2 id="child-templates-of-work-order-templates-are-now-loaded">Child templates of Work Order Templates are now loaded.</h2>
+<p>When creating or updating an order you can load a work order template along with any child templates associated. This has been accomplished by adding an additional optional parameter to the existing Save Argument called 'LoadChildTemplates'</p>
+<p>e.g.&nbsp;header: <br>
+</p><div class="highlight"><pre><span></span><code>SaveArgument:&nbsp;{"LoadTemplate":"1012","LoadChildTemplates":"Y"}
+</code></pre></div><br>
+(25746)<p></p>
+<h2 id="ability-to-enable-custom-drop-down-fields-to-return-additional-attributes">Ability to enable custom drop-down fields to return additional attributes</h2>
+<p>Users can now enable <strong>custom dropdown fields</strong> (through a new document customisation flag 'Additional API details', so that when called by the REST API will return the additional attributes stored with the dropdown record such as external_key.</p>
+<p>Document Customisation fields showing additional checkbox:<br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/Pasted%20image%2020250328121552.png" data-desc-position="bottom"><img alt="" src="../assets/Pasted%20image%2020250328121552.png"></a></p>
+<p>Example of a custom drop-down field when 'Additional API details' is <u>not</u> enabled:<br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/Pasted%20image%2020250820122610.png" data-desc-position="bottom"><img alt="|334" src="../assets/Pasted%20image%2020250820122610.png"></a></p>
+<p>Example of a custom drop-down field when 'Additional API details' <u>is</u> enabled:<br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/Pasted%20image%2020250820122824.png" data-desc-position="bottom"><img alt="|332" src="../assets/Pasted%20image%2020250820122824.png"></a></p>
+<p>(28200)</p>
+<h2 id="fixes">Fixes</h2>
+<p>For a full list, refer to the <a href="https://helpcenter.fabricdata.com/hc/en-us/articles/35383589106459-Xytech-2025-Release-Release-Log-11-3">11.3 release notes</a>. </p>
+<h2 id="response-status-codes-in-swagger-documentation-now-reflect-the-correct-values-for-the-2xx-range">Response status codes in Swagger documentation now reflect the correct values for the 2xx range.</h2>
+<p>Resolves an issue where the OpenAPI (Swagger) documentation for certain REST API endpoints did not accurately reflect the actual HTTP response value, such as the 200 Ok response calling the POST method for the /JmJob endpoint (previously 204).<br>
+(26278)</p>
+<h2 id="post-datetime-fields-ignore-offset-attribute">POST datetime fields ignore offset attribute</h2>
+<p>Resolves a REST API issue when using POST,&nbsp; datetime offset attributes on date times values were being ignored. Date formats can include the time offset e.g.&nbsp;"2024-12-05T04:00:00-08:00"<br>
+(27932)</p>
+<h2 id="v112"><font color="#c00000">v11.2</font></h2>
+<p>Fixes</p>
+<h2 id="jmwotransaction">JmWoTransaction</h2>
+<p>Resolved an issue where the API documentation for JmWoTransaction incorrectly omitted the required wo_no_seq parameter.</p>
+<h2 id="api-pagination-count-incorrect-value-for-pages-after-1">API Pagination Count incorrect value for pages after 1</h2>
+<p>Resolves a REST API pagination issue, where the Pagination Count (found in the response header) was responding with in incorrect value.</p>
+<h2 id="error-loading-service-templates">Error Loading Service Templates</h2>
+<p>Resolves an issue when creating a Media Order or Transmission Order via the REST API where a service row field value was set incorrectly (dsp_seq), creating invalid orders.</p>
+<h2 id="v111"><font color="#c00000">v11.1</font></h2>
+<h2 id="division">Division</h2>
+<p>REST API calls now support the ability to pass the Division as an override to the API API user's default Division. </p>
+<p>A new optional header called&nbsp;"Division-Code" exists where you can now include the Division code. This will ensure the correct results are returned for the API users current Division.<br>
+The API user account must have user access to the division to be able to successfully pass it in the API call. If not, you will receive an error message. </p>
+<p>e.g.<br>
+Division-Code : GS<br>
+In Postman:<br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/Pasted%20image%2020250116145717.png" data-desc-position="bottom"><img alt="" src="../assets/Pasted%20image%2020250116145717.png"></a></p>
+<h2 id="response-body-on-creation">Response body on creation</h2>
+<p>POST calls now include sub-table IDs of any sub-table records created by the call.</p>
+<h2 id="attachment-file-upload">Attachment File Upload</h2>
+<p>The REST API now provides the ability to upload an attachment file that auto creates the attachment record. </p>
+<p>The file type needs to already exist as a defined Attachment Type (System - Setup - Attachment Types) to be successfully uploaded. The ability to delete is also provided.</p>
+<p>The attachment record will be auto created assigning the matching Attachment Type and description as the filename.  </p>
+<p>Multiple files can be uploaded in a single POST API call.<br>
+Use <strong>form-data</strong> for the body.</p>
+<p>Endpoint:<br>
+<code>/SysAttachment/attachment_keystring=10339:100-1</code><br>
+Where <em>attachment_keystring</em> is made up of a concatenation of document ID and record ID</p>
+<p>e.g. <br>
+- Document ID for Work Orders = 10339 (see document customisation list for IDs)<br>
+- A specific Work Order ID = 100-1<br>
+The response will include the IDs of the created attachment records.</p>
+<p>Full cURL example:<br>
+</p><div class="highlight"><pre><span></span><code>curl<span class="w"> </span>--location<span class="w"> </span><span class="s1">'https://devwcumpapp2.xytech.xytechsystems.com/xyt_main/api/v2/database/XYT_MAIN_RUBY_V/SysAttachment/attachment_keystring=10339:100-1'</span><span class="w"> </span><span class="se">\</span>
+--header<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
+--header<span class="w"> </span><span class="s1">'Authorization: Basic xxxxxxxxxxxxxxxxxxxx'</span><span class="w"> </span><span class="se">\</span>
+--form<span class="w"> </span><span class="s1">'=@"/C:/temp/DetailsOn100-1.txt"'</span><span class="w"> </span><span class="se">\</span>
+--form<span class="w"> </span><span class="s1">'=@"/C:/temp/A File.pdf"'</span>
+</code></pre></div><p></p>
+<p>Postman:<br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="assets/Pasted%20image%2020240626105827.png" data-desc-position="bottom"><img alt="" src="assets/Pasted%20image%2020240626105827.png"></a><br>
+Delete attachment file example:<br>
+<code>DELETE {{server}}/SysAttachment/attachment_keystring=10339:100-1/sys_attachment/attachment_no=2205</code></p>
+<h2 id="syscontactfacade-ability-to-create-user-and-vendor-profiles">SysContactFacade ability to create User and Vendor profiles</h2>
+<p>The existing /SysContactFacade endpoint now supports the creation and updating of User and Vendor contact types (profiles).</p>
+<h2 id="additional-query-parameters">Additional query parameters</h2>
+<h3 id="notin-not-in">NOTIN (Not in)</h3>
+<p>Ability to query where a field's value does not match an array of supplied values.<br>
+Usage example: {{server}}/PmProjectList?query={"project_desc":{"$notin":["test", "Sarah"]}}<br>
+Applies to GET queries.</p>
+<h3 id="likeand-like-and">LIKEAND (Like and)</h3>
+<p>Ability to define an array of matching values that all have to match regardless of the order defined. <br>
+{{server}}/LibMasterList?{"master_desc":{"$LIKEAND":["%Genesis%","%XHD%"]}<br>
+Applies to GET queries.</p>
+<h2 id="swaggeropenapi-definition-now-downloadable-as-json">Swagger/OpenAPI definition now downloadable as JSON</h2>
+<p>The Swagger document definition now provides the ability to download the definition as a JSON file instead of a YAML.</p>
+<h2 id="link-child-titles-to-parent-in-single-api-call">Link child titles to parent in single API call</h2>
+<p>REST API now provides a new endpoint that gives the ability to manage new or existing Titles and assign the Title to a parent Title in a single API call. New endpoint:&nbsp;/LibTitleHierarchyFacade.</p>
+<h2 id="known-issues">Known issues</h2>
+<h3 id="there-are-differences-in-the-way-swagger-reports-a-payload-definition-between-post-get-calls">There are differences in the way Swagger reports a payload definition between POST &amp; GET calls.</h3>
+<p>Swagger defines the payload for a sub-table GET differently to how the REST API actually responds.</p>
+<h2 id="v110"><font color="#c00000">v11.0</font></h2>
+<h2 id="upsert-is-now-supported-via-the-put-method">'upsert' is now supported via the PUT method</h2>
+<p>Ability to create or update if record already exists. see: <a href="../Upsert/">Upsert</a></p>
+<h2 id="compression-is-now-supported">Compression is now supported</h2>
+<p>Compression is enabled by default when making calls using a standard header:<br>
+<code>Accept-Encoding:&nbsp;&nbsp;gzip&nbsp;or deflate</code><br>
+This applies to all API methods.</p>
+<p>A couple of real-world examples that shows the benefit of using compression, where a list of transactions were retrieved using a GET list endpoint for a date range:</p>
+<p>Example #1<br>
+<em>Without compression:</em>  Takes 5 seconds and has a payload of <strong>4.4 MB</strong>.<br>
+<em>With compression:</em>  Takes 4 seconds and has a payload of <strong>142 KB</strong>.  </p>
+<p>Example #2<br>
+<em>Without compression:</em>  22 seconds with response size of <strong>9.47 MB</strong><br>
+<em>With compression:</em>  8 seconds with response size of <strong>320 KB</strong><br>
+In this example, compression made the payload a 30th the size.</p>
+<p>It is recommend to always use compression.</p>
+<h2 id="greater-than-and-less-than-new-query-parameters">Greater than and less than new query parameters</h2>
+<p>You can now use query parameters with:<br>
+- LessThanOrEqual ($lte)<br>
+- LessThan&nbsp;($lt)<br>
+- GreaterThanOrEqual&nbsp;($gte)<br>
+- GreaterThan&nbsp;($gt)</p>
+<p>e.g. Title numbers greater than 106438<br>
+{"title_no":{"$gt": "106438"}}</p>
+<h2 id="ability-to-use-resultcolumns-for-defining-sub-table-fields-to-return-on-maintenance-docs">Ability to use resultColumns for defining sub-table fields to return on maintenance docs.</h2>
+<p>When calling a maintenance document using a GET that includes a URL sub-table filter, you can now use the 'resultColumns'&nbsp; parameters to define the fields you want returned in the response body. Previously the resultColumns parameter was only respected for the primary table and all fields were returned for the sub-table.&nbsp;By specifying the fields you want returned helps maintain overall system performance.</p>
+<p>Example defining the field value you want returned from a Job subtable called Episode:<br>
+</p><div class="highlight"><pre><span></span><code>{{server}}/JmJob/job_no=342/jm_episode?resultColumns={"jm_episode":"title_no"}
+</code></pre></div><br>
+This will return only respond with the Episode title_no values for job 342<p></p>
+<p>A more complex example where there is a sub-sub-table are involved:<br>
+</p><div class="highlight"><pre><span></span><code>{{server}}/XmTransmissionOrder/wo_no_seq=1072992-1/mo_service_row/service_row_no=221083/mo_operation/operation_no=133119?resultColumns={"mo_operation":["operation_no","task_no","trx_resource_desc","trx_group_desc"]}
+</code></pre></div><br>
+Returns Operation details for a transmission order for a specific Service Row.<p></p>
+<h2 id="corrected-null-date-values">Corrected null date values</h2>
+<p>Fixed in v10.6SP1 and v11.0<br>
+Creating date fields with a null value now correctly sets the date value to null as opposed to "0001-01-01T00:00:00"<br>
+Applies to POST/PUT/PATCH methods.</p>
+<h2 id="syscontactfacade">SysContactFacade</h2>
+<p>POST to SysContactFacade no longer responds with the ID of the created record in the header, instead it now responds with the ID within the response body. This is due to the fact that SysContactFacade is capable of creating multiple new records and the header can only provide a single ID value.</p>
+<h2 id="v106"><font color="#c00000">v10.6</font></h2>
+<ul>
+<li>Swagger documentation now includes the PATCH method using a POST payload</li>
+<li>Swagger includes example payloads for sub-tables (previously not populated).</li>
+<li>Swagger now includes PATCH method for list documents.</li>
+<li>Other Swagger improvements and correct missing parameter fields.</li>
+<li>Additional header parameters for optimization and filtering<ul>
+<li>Ignore alternate keys</li>
+<li>Omit null values</li>
+<li>Filter results for maintenance documents</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: REST API Introduction">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                REST API Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Deprecation%20of%20REST%20API%20v1/" class="md-footer__link md-footer__link--next" aria-label="Next: Deprecation of REST API v1">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Deprecation of REST API v1
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Xytech Systems Inc.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.footer", "navigation.sections", "navigation.expand", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

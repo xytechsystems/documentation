@@ -1,0 +1,2126 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://xytechsystems.github.io/documentation/REST-API%20Guide/Query%20Parameters%20and%20Filters/">
+      
+      
+        <link rel="prev" href="../Custom%20field%20handling/">
+      
+      
+        <link rel="next" href="../Save%20Arguments/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Working with Query Parameters and Filters - Xytech API Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="xytech" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#query-parameter" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Xytech API Documentation" class="md-header__button md-logo" aria-label="Xytech API Documentation" data-md-component="logo">
+      
+  <img src="../../assets/xLogo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xytech API Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Working with Query Parameters and Filters
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="xytech" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  REST API Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Webhooks%20Guide/" class="md-tabs__link">
+          
+  
+  
+  Webhooks Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Xytech API Documentation" class="md-nav__button md-logo" aria-label="Xytech API Documentation" data-md-component="logo">
+      
+  <img src="../../assets/xLogo.png" alt="logo">
+
+    </a>
+    Xytech API Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    REST API Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../What%27s%20New/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Deprecation%20of%20REST%20API%20v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deprecation of REST API v1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Connecting%20and%20Authenticating/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connecting and Authenticating
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Methods%20and%20response%20codes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods and Response Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Using%20Postman%20and%20cURL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Postman and cURL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fundamentals%20and%20data%20model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentals and data model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenAPI%20definition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAPI Definition and Endpoints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Key%20fields%20and%20time%20formats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Fields and Time Formats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Custom%20field%20handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Field Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working with Query Parameters and Filters
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working with Query Parameters and Filters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#query-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query Parameter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query Filters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-or-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String or Number
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null-empty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null (empty)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ne-not-equal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NE (not equal)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#greater-than-and-less-than-new-query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Greater than and less than new query parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notin-not-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NOTIN (Not in)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#likeand-like-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LIKEAND (Like and)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-filter-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query Filter Tips
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Filter Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#null-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NULL Values
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-encoding-of-special-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        URL encoding of special characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-multiple-wildcard-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searching for multiple wildcard values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-columns-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result Columns Parameter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagination-and-sort-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagination and Sort Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null-value-handling-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null Value Handling Parameter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternate-key-handling-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternate Key Handling Parameter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-time-zone-name-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source Time Zone Name Header
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#division" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Division
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Save%20Arguments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save Arguments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Upsert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upsert / PUT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Performance%20Recommendations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance Recommendations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Known%20Issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webhooks Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Webhooks Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webhooks Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/What%27s%20New/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Outbound%20Connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outbound Connection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Export%20Adaptor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Adaptor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Event%20Trigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Event Trigger
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Export%20Adaptor%20Logs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Adaptor Logs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webhooks%20Guide/Tips%20and%20Troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips and Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#query-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query Parameter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query Filters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-or-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String or Number
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null-empty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null (empty)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ne-not-equal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NE (not equal)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#greater-than-and-less-than-new-query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Greater than and less than new query parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notin-not-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NOTIN (Not in)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#likeand-like-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LIKEAND (Like and)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-filter-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query Filter Tips
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Filter Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#null-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NULL Values
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-encoding-of-special-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        URL encoding of special characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-multiple-wildcard-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searching for multiple wildcard values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-columns-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result Columns Parameter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagination-and-sort-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagination and Sort Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null-value-handling-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null Value Handling Parameter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternate-key-handling-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternate Key Handling Parameter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-time-zone-name-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source Time Zone Name Header
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#division" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Division
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Working with Query Parameters and Filters</h1>
+
+<h2 id="query-parameter">Query Parameter</h2>
+<p><strong>GET</strong> and <strong>PATCH</strong> List endpoints require query parameters.</p>
+<p>This section describes the syntax and options used for the query parameter. This is a mandatory parameter for List documents.</p>
+<p>The standard format for a “query” parameter is to add the parameter as <em>query={}</em> to the end of a GET request for a List document after the parameter delimiter (“?”), where the value of query= is a JSON object:</p>
+<p><code>http://{APIbase_url}/documentList?query={key: value}</code></p>
+<p>Such as:</p>
+<p><code>http://{APIbase_url}/jmJobList?query={"job_no": "12345"}</code></p>
+<p><strong>Note:</strong> The query parameter is supported with GET and PATCH requests of List type documents and is <strong>not</strong> supported by GET requests for Setup or Maintenance documents.</p>
+<p>In the simplest form, the value is a single piece of information, such as a string or integer. In more complex forms, the value is a JSON object containing specific formats as described below.</p>
+<p>See section regarding <strong>URL encoding</strong> requirements: <a href="./#URL%20encoding%20of%20special%20characters">URL encoding of special characters</a></p>
+<h2 id="query-filters">Query Filters</h2>
+<h3 id="string-or-number">String or Number</h3>
+<p>To return items that match a specified string. The string can either be letters or numbers. Wildcard ‘%’ can be used. Remember to URL encode the % sign. </p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Parameter values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Syntax</td>
+<td>query= {"field":"value"}</td>
+</tr>
+<tr>
+<td>Examples</td>
+<td>query={"job_desc":"Big Apple Live"}  <br>query={"job_desc":"%Big%"}  <br>query={"job_no":101101}|</td>
+</tr>
+<tr>
+<td>Multiple key/value pairs</td>
+<td>To specify multiple key/value pairs, separate each key/value pair with a comma  <br>query={"cust_id":"123","job_type_no":"4"}  <br>query={"cust_id":"123","job_type_no":"4","active":"Y"}</td>
+</tr>
+<tr>
+<td></td>
+<td>Note: When specifying multiple key/value pairs, the API will return only items that match ALL specified criteria.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="range">Range</h3>
+<p>To return items that fall between a specified minimum and maximum numeric value.</p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Parameter values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Syntax</td>
+<td><br><code>&lt;br&gt;query="field":{"$range":[lower_limit, upper_limit]}&lt;br&gt;</code><br></td>
+</tr>
+<tr>
+<td>Examples</td>
+<td><br><code>&lt;br&gt;query={"job_no":{"$range":[100, 199]}}&lt;br&gt;query={"wo_begin_dt":{"$range":["2023-12-01","2023-12-31"]}}  &lt;br&gt;query={"wo_begin_dt":{"$range":["2023-06-01T09:00","2023-06-01T17:00"]}}&lt;br&gt;</code><br><br><br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="in">In</h3>
+<p>To return items that match one of the values provided in a given set of values.<br>
+See section below on wildcards <a href="./#Searching%20for%20multiple%20wildcard%20values">Searching for multiple wildcard values</a></p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Parameter values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Syntax</td>
+<td><code>query={“field”:{"$in":[“value_1”,”value_2”, … ”value_n”]}}</code></td>
+</tr>
+<tr>
+<td>Examples</td>
+<td><code>query={“job_no”:{"$in":[100, 105, 110, 119]}}</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="null-empty">Null (empty)</h3>
+<p>To return items that have NULL values. <br>
+Note: Put pipe characters around NULL to differentiate it from the literal string “NULL”.</p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Parameter Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Syntax</td>
+<td>query={"field”: “|NULL|”}</td>
+</tr>
+<tr>
+<td>Examples</td>
+<td>query={“phone_number”:"|NULL|"}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ne-not-equal">NE (not equal)</h3>
+<p>To return items that do not match the specified number, string, or NULL.</p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Parameter Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Syntax</td>
+<td>query={“field”:{"$ne":”value”}}</td>
+</tr>
+<tr>
+<td>Examples:</td>
+<td></td>
+</tr>
+<tr>
+<td>Not string</td>
+<td>query={"job_desc ":{"$ne":"Big Apple Live"}}</td>
+</tr>
+<tr>
+<td>Not number</td>
+<td>query={"cust_id":{"$ne":1001}}</td>
+</tr>
+<tr>
+<td>Not null</td>
+<td>query={"jm_phase_external_key":{"$ne":"|NULL|"}}</td>
+</tr>
+<tr>
+<td>Not like</td>
+<td>query={"wo_desc":{"$ne":"Test%"},"wo_type_no": 83}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="greater-than-and-less-than-new-query-parameters">Greater than and less than new query parameters</h3>
+<p>To return items where values are greater than or less than a given value.</p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Abv</th>
+<th>Parameter values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Syntax</td>
+<td></td>
+<td>query={"field":{"option": "value"}}</td>
+</tr>
+<tr>
+<td>Examples:</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Greater Than</td>
+<td>$gt</td>
+<td>query={"title_no":{"$gt": 106438}}</td>
+</tr>
+<tr>
+<td>Greater Than Or Equal</td>
+<td>$gte</td>
+<td>query={"date_added":{"$gte":"2022-07-26T00:00:00"}}</td>
+</tr>
+<tr>
+<td>Less Than</td>
+<td>$lt</td>
+<td>query={"date_added":{"$lt":"2022-07-26T00:00:00"}}</td>
+</tr>
+<tr>
+<td>Less Than Or Equal</td>
+<td>$lte</td>
+<td>query={"date_added":{"$lte":"2022-07-26T00:00:00"}}</td>
+</tr>
+<tr>
+<td>Values can be numeric or dates.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Full GET example for greater than<br>
+</p><div class="highlight"><pre><span></span><code><span class="err">curl</span><span class="w"> </span><span class="mi">--</span><span class="err">loca</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="mi">--</span><span class="err">globo</span><span class="kc">ff</span><span class="w"> </span><span class="err">'h</span><span class="kc">tt</span><span class="err">p</span><span class="p">:</span><span class="c1">//{APIbaseURL}/LibMasterList?resultcolumns={"L": ["master_no", "master_desc", "date_added","desc_3"]}&amp;query={"title_no":{"$gt": 1102}}' \</span>
+<span class="mi">--</span><span class="err">header</span><span class="w"> </span><span class="err">'Co</span><span class="kc">ntent</span><span class="mi">-</span><span class="err">Type</span><span class="p">:</span><span class="w"> </span><span class="err">applica</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">/jso</span><span class="kc">n</span><span class="err">'</span><span class="w"> </span><span class="err">\</span>
+<span class="mi">--</span><span class="err">header</span><span class="w"> </span><span class="err">'Au</span><span class="kc">t</span><span class="err">horiza</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="err">Basic</span><span class="w"> </span><span class="err">******'</span><span class="w"> </span><span class="err">\</span>
+<span class="mi">--</span><span class="err">da</span><span class="kc">ta</span><span class="w"> </span><span class="err">''</span>
+</code></pre></div><p></p>
+<h3 id="notin-not-in">NOTIN (Not in)</h3>
+<p>(11.1)<br>
+Ability to query where a field's value does not match an array of supplied values.<br>
+Usage example: {{server}}/PmProjectList?query={"project_desc":{"$notin":["test", "Sarah"]}}<br>
+Applies to GET queries.</p>
+<h3 id="likeand-like-and">LIKEAND (Like and)</h3>
+<p>(11.1)<br>
+Ability to define an array of matching values that all have to match regardless of the order defined. <br>
+{{server}}/LibMasterList?{"master_desc":{"$LIKEAND":["%Genesis%","%XHD%"]}<br>
+Applies to GET queries.</p>
+<h2 id="query-filter-tips">Query Filter Tips</h2>
+<h3 id="null-values">NULL Values</h3>
+<p>The Null parameter returns any record that has a null value for the specified key, which indicates that no value has ever been set. This differentiates it from an empty string for text-based or date-based properties, a 0 value for numbers, and true or false values for Boolean properties.</p>
+<p><strong>Note:</strong> Not all fields support null values. If possible, check the OpenAPI definition whether the field allows nulls.</p>
+<p><strong>Values</strong><br>
+- String values are not case-sensitive.<br>
+- DateTime values should be provided in a valid ISO date format.</p>
+<h3 id="url-encoding-of-special-characters">URL encoding of special characters</h3>
+<p>When using HTML special characters as part of the query value, they must be URL encoded.</p>
+<p>Example:&nbsp;&nbsp;to use a wildcard query such as "<strong>%dave%"</strong>, the % needs substituting with <strong>%25</strong>. &nbsp;Once URL encoded will look like this <strong>%25dave%25</strong></p>
+<p>Example GET query with URL encoded wildcard :</p>
+<p>{{server}}/MoMediaOrderList?query={"wo_desc":"<strong>%25dave%25</strong>"}&amp;resultcolumns={"L": ["wo_no", "wo_desc"]}</p>
+<p><em>(Specifically the reason why&nbsp;<strong>%dave%</strong> fails to return valid results it that <strong>%da</strong>&nbsp;is the encoding for the&nbsp;<strong>Ú</strong> character)</em></p>
+<p>This also applies to datetime values that use the offset attribute with the + sign.</p>
+<p>To include a value of "<strong>2023-06-01T09:00+5:00</strong>" in a URL query parameter, substitute + with <strong>%2b</strong></p>
+<p>Example: <br>
+<code>query={"wo_begin_dt":{"$range":["2023-06-01T09:00%2b5:00","2023-06-01T17:00%2b5:00"]}}</code></p>
+<h3 id="searching-for-multiple-wildcard-values">Searching for multiple wildcard values</h3>
+<p>If you wanted to search for multiple wildcard values contained within a single field that all need to exist, then you can include a list of wildcard values.</p>
+<p>For example, if you wanted to search for media assets that have "Tale" AND "Dark" in their "master_desc" field, you can use the following query parameter:</p>
+<p><code>{"master_desc":{$in:["%Tale%Dark%","%Tale%Dark%"]}}</code></p>
+<p>Note you may need to use encode the % symbol (for instance if using Postman) you will need:</p>
+<p><code>{"master_desc":{$in:["%25Tale%25Dark%25","%25Tale%25Dark%25"]}}</code></p>
+<h2 id="result-columns-parameter">Result Columns Parameter</h2>
+<p>Used by the <strong>GET</strong> method on List and Maintenance endpoints.</p>
+<p><strong>resultColumns</strong> parameter is used to define the fields you wish to return in the response.<br>
+Without this parameter, the response will contain all document fields which is not recommended for performance reasons.</p>
+<p><em>For example:</em><br>
+<code>{APIbaseurl}/JmJobList?Query={"job_no":2}&amp;resultColumns={"L":["job_no","job_desc"]}</code></p>
+<p>Job No. and Job Description fields will be included in the response.<br>
+Important to include the “L” as the top-level element.</p>
+<p><strong>Sub-Table columns</strong></p>
+<p>Many endpoints include related sub-tables in their responses. Example syntax to include specific sub-table columns.</p>
+<p>Below example fetches a transmission order description and all it's service row numbers:</p>
+<p><code>{APIbase_url}/XmTransmissionOrder/wo_no_seq=7655-1?resultColumns={"jm_work_order":["wo_desc"],"mo_service_row":["service_row_no"]}</code></p>
+<p><em>Response:</em><br>
+</p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">"jm_work_order"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">"mo_service_row"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">"service_row_no"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">"external_key"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">"service_row_no"</span><span class="p">:</span><span class="w"> </span><span class="mi">9933</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">"service_row_no"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">"external_key"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">"service_row_no"</span><span class="p">:</span><span class="w"> </span><span class="mi">9934</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">"wo_desc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WS Transmission Test"</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div><p></p>
+<p><strong>Performance recommendation.</strong><br>
+Always use the <strong>resultColumns</strong> parameter otherwise responses will return large numbers of fields most of which will not be required and only adds to the system performance overhead. In the future API v3, this will become a mandatory parameter.</p>
+<h2 id="pagination-and-sort-parameters">Pagination and Sort Parameters</h2>
+<p>API Pagination is available for the GET Query on List endpoints.  </p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pageSize</td>
+<td>Integer</td>
+<td>is the number of records returned per page</td>
+</tr>
+<tr>
+<td>page</td>
+<td>Integer</td>
+<td>is the page number to return</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>String</td>
+<td>is the field to sort followed by ascending or descending option</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sort parameters:</strong> <br>
+Syntax: <code>sort=[field1 sort, field2 sort]</code><br>
+Example: <code>sort=["job_desc desc", "job_no desc"]</code>  </p>
+<p><em>Note:</em><br>
+If you don’t specify pageSize, the ‘page’ and ‘sort’ options are ignored.<br>
+If you do specify a pageSize and do not pass a page, page will default to 1.</p>
+<p><strong>Example:</strong><br>
+To return the first 10 records on page 1 sorted by product_no:<br>
+</p><div class="highlight"><pre><span></span><code><span class="err">GET</span><span class="w"> </span><span class="p">{</span><span class="err">APIbaseURL</span><span class="p">}</span><span class="err">/JmOrgProduc</span><span class="kc">t</span><span class="err">Lis</span><span class="kc">t</span><span class="err">?query=</span><span class="p">{</span><span class="nt">"active"</span><span class="p">:</span><span class="s2">"Y"</span><span class="p">}</span><span class="err">&amp;resul</span><span class="kc">t</span><span class="err">Colum</span><span class="kc">ns</span><span class="err">=</span><span class="p">{</span><span class="nt">"L"</span><span class="p">:[</span><span class="s2">"product_no"</span><span class="p">,</span><span class="s2">"product_desc"</span><span class="p">]}</span><span class="err">&amp;sor</span><span class="kc">t</span><span class="err">=</span><span class="p">[</span><span class="s2">"product_no desc"</span><span class="p">]</span><span class="err">&amp;pageSize=</span><span class="mi">10</span><span class="err">&amp;page=</span><span class="mi">1</span>
+</code></pre></div><p></p>
+<p><strong>Full example:</strong><br>
+</p><div class="highlight"><pre><span></span><code><span class="err">GET</span><span class="w"> </span><span class="p">{</span><span class="err">APIbaseURL</span><span class="p">}</span><span class="err">/JmJobLis</span><span class="kc">t</span><span class="err">?query=</span><span class="p">{</span><span class="nt">"job_no"</span><span class="p">:{</span><span class="nt">"$range"</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">67982</span><span class="p">]}}</span><span class="err">&amp;resul</span><span class="kc">t</span><span class="err">colum</span><span class="kc">ns</span><span class="err">=</span><span class="p">{</span><span class="nt">"L"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"job_no"</span><span class="p">,</span><span class="w"> </span><span class="s2">"job_desc"</span><span class="p">]}</span><span class="err">&amp;pageSize=</span><span class="mi">5</span><span class="err">&amp;page=</span><span class="mi">7</span><span class="err">&amp;sor</span><span class="kc">t</span><span class="err">=</span><span class="p">[</span><span class="s2">"job_desc desc"</span><span class="p">,</span><span class="w"> </span><span class="s2">"job_no desc"</span><span class="p">]</span>
+</code></pre></div><p></p>
+<p>The above example queries for jobs that have job numbers in the range of 1 to  67982, returns job number and job description fields but only the 7th page with 5 jobs sorted first by description (descending) then by job number (descending).</p>
+<p>The response header will include a parameter called '<strong>Pagination-Count</strong>' which is the count of all records as a result of the query.</p>
+<p>This will allows you to call for data in manageable payloads without exceeding memory limitations.</p>
+<h2 id="null-value-handling-parameter">Null Value Handling Parameter</h2>
+<p>This optional parameter suppresses all null value fields from the response payload. Using this parameter reduces the payload size dramatically, especially for larger queries. (v10.6+)</p>
+<p>Applicable for all GET calls with List, Maintenance &amp; Report endpoints.<br>
+Values are ‘<strong>ignore</strong>’ or ‘<strong>include</strong>’ (default).<br>
+'include' means that all null values are included in the response.</p>
+<p>Examples:<br>
+<em>URL Parameter:- nullvaluehandling=<strong>include</strong> (default)</em>&nbsp;<br>
+</p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="s2">"L"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">"barcode"</span><span class="o">:</span><span class="w"> </span><span class="s2">"MM915"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"company_name"</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"cust_id"</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"master_desc"</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"master_no"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="s2">"barcode"</span><span class="o">:</span><span class="w"> </span><span class="s2">"MM915"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"external_key"</span><span class="o">:</span><span class="w"> </span><span class="s2">"VX-90"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"master_no"</span><span class="o">:</span><span class="w"> </span><span class="mf">915</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"umid"</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">...</span>
+</code></pre></div><p></p>
+<p>URL Parameter:- nullvaluehandling=<strong>ignore</strong> (recommended)<br>
+</p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="s2">"L"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">"barcode"</span><span class="o">:</span><span class="w"> </span><span class="s2">"MM915"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"master_no"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="s2">"barcode"</span><span class="o">:</span><span class="w"> </span><span class="s2">"MM915"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"external_key"</span><span class="o">:</span><span class="w"> </span><span class="s2">"VX-90"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"master_no"</span><span class="o">:</span><span class="w"> </span><span class="mf">915</span>
+<span class="p">...</span>
+</code></pre></div><br>
+Notice how all null value fields are omitted.  <p></p>
+<p><strong>Performance Recommendation</strong><br>
+It's recommended to always include this parameter with the value 'ignore', unless visibility of null values is required.</p>
+<h2 id="alternate-key-handling-parameter">Alternate Key Handling Parameter</h2>
+<p>This optional parameter suppresses additional key fields from the responses. If you do <u>not</u> need to work with key fields other than the primary key, use this parameter to keep the API call performant and reduce the processing overhead when not working with alternate key fields. (v10.6+)</p>
+<p>Applicable for all GET calls with List, Maintenance endpoints.</p>
+<p>Values are ‘<strong>ignore</strong>’ or ‘<strong>include</strong>’ (default).<br>
+‘include’ includes alternate keys in the response.</p>
+<p>Example:<br>
+URL Parameter:- alternatekeyhandling=<strong>include</strong> (default)<br>
+</p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">"L"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">"barcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MM915"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"cust_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"master_desc"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"master_no"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">"barcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MM915"</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">"external_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VX-90"</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">"master_no"</span><span class="p">:</span><span class="w"> </span><span class="mi">915</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">"umid"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="err">...</span>
+</code></pre></div><p></p>
+<p><em>URL Parameter:- alternatekeyhandling=<strong>ignore</strong></em>&nbsp;(recomended)<br>
+</p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">"L"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">"barcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MM915"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"cust_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"master_desc"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"master_no"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">"master_no"</span><span class="p">:</span><span class="w"> </span><span class="mi">915</span>
+<span class="err">...</span>
+</code></pre></div><p></p>
+<p>Notice how the additional key fields barcode, external_key &amp; umid are omitted.</p>
+<p><strong>Performance Recommendation</strong><br>
+It's recommended to always include this parameter with the value 'ignore', unless you are working with alternate keys.</p>
+<h2 id="source-time-zone-name-header">Source Time Zone Name Header</h2>
+<p>The REST API uses Date time formats in ISO format with an optional offset value.</p>
+<p>e.g. 2014-11-03T22:20:00+00:00</p>
+<p>If you omit the offset value when using POST to create a record, you can use a header parameter to set the time zone your dates are using.<br>
+The advantage of using this header approach, is that it will respect any daylight savings offset applicable to the date given.</p>
+<table>
+<thead>
+<tr>
+<th>Header Key</th>
+<th>Header Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source-Time-Zone-Name</td>
+<td>{Windows Time Zone name}</td>
+</tr>
+<tr>
+<td>e.g.  header: <code>Source-Time-Zone-Name: Pacific Standard Time</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>This example will will create records in the time zone of Pacific Standard Time.<br>
+Remember to omit the offset values in your time formats.<br>
+See link for list of <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11">Windows Time Zones</a></p>
+<h2 id="division">Division</h2>
+<p>(11.1)<br>
+REST API calls support the ability to pass the Division as an override to the API API user's default Division. </p>
+<p>An optional header called&nbsp;"Division-Code" exists where you can include the Division code. This will ensure the correct results are returned for the API users when using Divisions.</p>
+<p>The API user account must have been given user access to the division to be able to successfully pass it in the API call. If not, you will receive an error message. </p>
+<p>e.g.<br>
+Division-Code : GS</p>
+<p>In postman:<br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/Pasted%20image%2020250829103605.png" data-desc-position="bottom"><img alt="|500" src="../assets/Pasted%20image%2020250829103605.png"></a></p>
+<p>This capability replicates the functionality when a user accesses the webapp with their default division,&nbsp; who will see data filtered by their default Division.</p>
+<p>Applicable only to sites that use the Division feature.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../Custom%20field%20handling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Custom Field Handling">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Custom Field Handling
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Save%20Arguments/" class="md-footer__link md-footer__link--next" aria-label="Next: Save Arguments">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Save Arguments
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Xytech Systems Inc.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.footer", "navigation.sections", "navigation.expand", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
