@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ec29882ff1a54277",
+        "id": "d8d6cccd34984837",
         "type": "tabs",
         "children": [
           {
-            "id": "784ae285dab331a9",
+            "id": "45d684498dce2deb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/REST-API Guide/What's New.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "What's New"
+              "title": "New tab"
             }
           }
         ]
@@ -138,13 +134,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/REST-API Guide/What's New.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of What's New"
+              "title": "Outline"
             }
           }
         ],
@@ -166,8 +161,9 @@
       "nav-weight:Nav Weight: click to disable": false
     }
   },
-  "active": "784ae285dab331a9",
+  "active": "45d684498dce2deb",
   "lastOpenFiles": [
+    "docs/REST-API Guide/What's New.md",
     "docs/REST-API Guide/Using Postman and cURL.md",
     "docs/REST-API Guide/Examples.md",
     "docs/REST-API Guide/Connecting and Authenticating.md",
@@ -191,7 +187,6 @@
     "docs/drafts/README.md",
     "docs/auth-providers",
     "docs/SUMMARY.md",
-    "docs/REST-API Guide/What's New.md",
     "docs/REST-API Guide/Known Issues.md",
     "docs/REST-API Guide/Custom field handling.md",
     "docs/REST-API Guide/OpenAPI definition.md",
